@@ -1,0 +1,1004 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="svg inlinesvg">
+  <head>
+    <title>Workshop: Writing unit tests: It's now or never! - Rootconf</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    
+    <meta name="theme-color" content="#192967"/>
+    
+    
+    <meta name="description" content="This workshop is aimed at people who would like to improve their development skills by practially learning to write professional quality code">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="../images/hg-favicon.ico" />
+    <link rel="author" href="https://plus.google.com/" />    
+
+    
+      
+    
+
+    <meta property="og:url" content="https://rootconf.in/2018-unittests-for-python/">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="This workshop is aimed at people who would like to improve their development skills by practially learning to write professional quality code">
+    <meta property="og:title" content="Workshop: Writing unit tests: It's now or never! - Rootconf">
+    <meta property="og:site_name" content="Rootconf">
+    <meta property="og:see_also" content="https://rootconf.in">
+    <meta property="og:type" content="website">
+
+    <meta itemprop="name" content="Workshop: Writing unit tests: It's now or never! - Rootconf">
+    <meta itemprop="description" content="This workshop is aimed at people who would like to improve their development skills by practially learning to write professional quality code">
+    <meta itemprop="image" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://rootconf.in/2018-unittests-for-python/">
+    <meta name="twitter:title" content="Workshop: Writing unit tests: It's now or never! - Rootconf">
+    <meta name="twitter:description" content="This workshop is aimed at people who would like to improve their development skills by practially learning to write professional quality code">
+    <meta name="twitter:image" content="">
+
+
+    
+    <link rel="stylesheet" href="../css/main.css">
+
+    
+
+    
+      
+      <link rel="stylesheet" href="../css/leaflet.css">
+      
+    
+
+    <link rel="stylesheet" href="../css/jquery.sidr.2.2.1.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+<body class="bg-light">
+  
+
+
+
+
+
+
+
+
+
+
+<div id="sidebar" style="display:none;">
+  <nav class="nav has-shadow">
+    <div class="container">
+      <a class="nav-item is-hidden-tablet" href="https://rootconf.in/" >
+        Rootconf
+      </a>
+      <div class="nav-right nav-menu is-active">
+        
+        
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="nav has-shadow is-hidden-mobile">
+  <div class="container">
+    <a class="nav-item nav-home" href="https://rootconf.in/" >
+      Rootconf
+    </a>
+    <div class="nav-left">
+      
+      
+    </div>
+  </div>
+</nav>
+
+
+    <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "Workshop: Writing unit tests: It's now or never!",
+    "startDate": "2018-05-20",
+    "location": {
+      "@type": "Place",
+      "name": "ThoughtFactory, Bangalore",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bangalore",
+        "addressCountry": "IN"
+      }
+    },
+    
+    "description": "This workshop is aimed at people who would like to improve their development skills by practially learning to write professional quality code",
+    "endDate": "2018-05-20",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://rootconf.in/2018-unittests-for-python/"
+    }
+  }
+  </script>
+
+  
+<section class="hero is-halfheight is-primary is-bold">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Workshop: Writing unit tests: It's now or never!
+      </h1>
+      
+      <h2 class="subtitle">
+        Automate UnitTests using nose as you build code together at this workshop.
+      </h2>
+      
+      <h3 class="subtitle is-6">10 AM to 1:15 PM, 20 May 2018, ThoughtFactory, Bangalore</h3>
+
+      <div class="block">
+        
+        <a class="button is-primary" href="index.html#tickets" data-href="#tickets">Buy Tickets</a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+  <div style="z-index:10;">
+    <nav class="nav has-shadow nav-sticky" style="z-index:10;">
+      <div class="container">
+        <div class="nav-left" style="z-index:10;">
+          <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          
+          <a class="nav-item is-tab is-hidden-tablet" data-href="#overview">Overview</a>
+          
+          
+          <a class="nav-item is-tab is-hidden-tablet" data-href="#instructors">Instructors</a>
+          
+          <!-- <li><a href="#schedule">Schedule</a></li> -->
+          
+          <a class="nav-item is-tab is-hidden-tablet" data-href="#tickets">Tickets</a>
+          
+          
+          <a class="nav-item is-tab is-hidden-tablet" data-href="#venue">Venue</a>
+          
+          
+          <a class="nav-item is-tab is-hidden-tablet" data-href="#sponsor">Sponsors</a>
+          
+          <a class="nav-item is-tab is-hidden-tablet" data-href="#hasgeek">About HasGeek</a>
+          <a class="nav-item is-tab is-hidden-tablet" href="https://rootconf.in/code-of-conduct">Code of Conduct</a>
+        </div>
+        <div class="nav-center" style="z-index:10;">
+          
+          <a class="nav-item is-tab is-hidden-mobile" data-href="#overview">Overview</a>
+          
+          
+          <a class="nav-item is-tab is-hidden-mobile" data-href="#instructors">Instructors</a>
+          
+          <!-- <li><a href="#schedule">Schedule</a></li> -->
+          
+          <a class="nav-item is-tab is-hidden-mobile" data-href="#tickets">Tickets</a>
+          
+          
+          <a class="nav-item is-tab is-hidden-mobile" data-href="#venue">Venue</a>
+          
+          
+          <a class="nav-item is-tab is-hidden-mobile" data-href="#sponsor">Sponsors</a>
+          
+          <a class="nav-item is-tab is-hidden-mobile" data-href="#hasgeek">About HasGeek</a>
+          <a class="nav-item is-tab is-hidden-mobile" href="https://rootconf.in/code-of-conduct">Code of Conduct</a>
+        </div>
+        <div class="nav-right">
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<!--/.Secondary Navbar -->
+
+
+<section class="section" id="overview">
+  <div class="container">
+    <div class="columns has-text-justified">
+    
+    <div class="column">
+      <div class="content">
+        
+<h1 id="abstract">Abstract</h1>
+<p>Are you new to unit testing? <br />
+This workshop is aimed at people who would like to improve their development skills by practially learning to write professional quality code. <br />
+Modifying production code without unit test cases is similar to walking through a field of landmines and writing and maintaining good unit tests can be real hard work, hence is this workshop, where instead of just covering the syntax, we will introduce most of tips and tricks to write good UnitTests with ease as we build the code together.</p>
+
+<h1 id="why-attend">Why Attend?</h1>
+
+<p>This workshop will help you to adopt unit testing if:</p>
+
+<ul>
+  <li>You spend a lot of non-billable hours fixing bugs</li>
+  <li>You and your team have adopted unit tests, but now you feel that
+    <ul>
+      <li>The tests are slowing you down</li>
+      <li>Having practical, good coverage is real hard</li>
+    </ul>
+  </li>
+  <li>You want to adopt unit testing and would like to avoid common pitfalls</li>
+  <li>Your application is huge and developers cannot modify it fast enough.</li>
+</ul>
+
+<h1 id="who-should-attend">Who Should Attend?</h1>
+<p>Anyone who wants to write safer code Eg. Developers using Python and would like to learn how to avoid introducing mistakes in their software.</p>
+
+<h1 id="requirements">Requirements</h1>
+
+<ul>
+  <li>Should be familiar with basic coding with Python.</li>
+  <li>Please bring you own laptop with python 2.7 or above installed</li>
+  <li>Detailed setup instructions will be emailed a week before the workshop day</li>
+</ul>
+
+<h1 id="links">Links</h1>
+
+<p>Slides: <a href="https://www.slideshare.net/secret/qI09RrNQ86pf0P" target="_blank">https://www.slideshare.net/secret/qI09RrNQ86pf0P</a> <br />
+Github: <a href="https://github.com/p00j4/unittest_with_nose" target="_blank">https://github.com/p00j4/unittest_with_nose</a></p>
+
+      </div>
+    </div>
+    
+    
+    
+    <div class="column">
+      <div class="content">
+        
+<h1 id="outline">Outline</h1>
+
+<p>Each section goes with understanding and implementing each one hands-on.</p>
+
+<h4 id="introduction">Introduction</h4>
+<ul>
+  <li>Why unit tests, what is it and why should I care ? (10 mins)</li>
+  <li>Getting Started 40 m
+    <ul>
+      <li>Setup checks</li>
+      <li>Unit Testing basics</li>
+      <li>Writing Simple Unit Tests</li>
+      <li>Organising with setup and teardown</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="coverage">Coverage</h4>
+<ul>
+  <li>How to cover most of the code with ease &amp; speed up development &amp; execution</li>
+  <li>Parameterise (10 mins)</li>
+  <li>Isolating Dependencies with Mocks
+    <ul>
+      <li>Mock &amp; various ways of using patch (20 mins)</li>
+      <li>Mock with Autospec and SideEffect (20 mins)</li>
+    </ul>
+  </li>
+  <li>Managing test Execution (20 mins)</li>
+  <li>Run specific tests</li>
+  <li>Re-run only failed tests</li>
+  <li>Speed up more with multi process</li>
+  <li>Are these tests bringing value (20 mins)</li>
+  <li>Test Reports</li>
+  <li>Coverage Reports</li>
+</ul>
+
+<h4 id="next-pointers-and-resources-10-mins">Next Pointers and Resources (10 mins)</h4>
+
+<h4 id="what-unit-testing-is-not-10-mins">What Unit Testing is Not (10 mins)</h4>
+
+<h4 id="donts-10-mins">Dont’s (10 mins)</h4>
+<ul>
+  <li>Will work on few frequent typical mistakes which usually we do &amp; tricks on how to avoid them</li>
+</ul>
+
+<h4 id="q--a-30-mins">Q &amp; A (30 mins)</h4>
+<ul>
+  <li>We together will work on your problems annd queries</li>
+</ul>
+
+      </div>
+    </div>
+    
+</div>
+
+  </div>
+</section>
+
+
+
+<section class="section" id="instructors">
+  <div class="container">
+    <div class="has-text-centered">
+  <h3 class="title">Instructors</h3>
+  <br>
+</div>
+<div class="columns is-centered is-multiline">
+  
+  
+  <div class="column is-3">
+    <div class="card is-clickable" onclick="showModal('instructor-pooja-shah')" data-href="view Pooja Shah" data-label="open Modal">
+      <div class="card-content">
+        <div class="media">
+          
+          <div class="media-left">
+            <figure class="image is-64x64" style="background-image: url('https://images.hasgeek.com/embed/file/7cc1cc3d575043c2ae2edfdb6b9aca39'); background-size: cover; background-position: center;">
+            </figure>
+          </div>
+          
+          <div class="media-content">
+            <p class="title is-4">Pooja Shah</p>
+            <p class="subtitle is-6">Open source enthusiast</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="instructor-pooja-shah" style="z-index:20;">
+      <div class="modal-background" onclick="hideModal('instructor-pooja-shah')"></div>
+      <div class="modal-content">
+        <div class="box">
+          <div class="media has-text-centered">
+
+            
+            <div class="media-left">
+              <figure class="image is-128x128" style="background-image: url('https://images.hasgeek.com/embed/file/7cc1cc3d575043c2ae2edfdb6b9aca39'); background-size: cover; background-position: center;">
+              </figure>
+            </div>
+            
+            <div class="media-content">
+              <p class="title is-4">Pooja Shah</p>
+              <p class="subtitle is-6">Open source enthusiast</p>
+              
+              <a href="https://p00j4.github.io/" target="_blank">Github</a>
+              
+            </div>
+          </div>
+          <div class="content">
+            <p>Pooja is an automation nerd and open source enthusiast. She loves brainstorming and implementing crazy ideas to figure out ways to improve the product quality. Having a blend of dev, qa &amp; devops mindset, she strives to bridge the gaps between all the teams to attain the best results. Driven by curiosity to learn &amp; share new things every day, she <a href="https://p00j4.github.io/" target="_blank">pens</a> them, open-source, record tutorials and talk about them at relevant conferences, some of the glimpses can be found on <a href="https://www.youtube.com/c/PoojaShahQAgirl" target="_blank">youtube</a> as well.</p>
+
+<p>With the help of some of her loving friends, she now has a special colleague named <a href="https://p00j4.github.io/#alice" target="_blank">alice</a>, a talking bot she has created to help herself in work &amp; gain her free time to play Pokemon</p>
+
+          </div>
+        </div>
+      </div>
+      <button class="modal-close is-large" onclick="hideModal('instructor-pooja-shah')"></button>
+    </div>
+  </div>
+  
+  <div class="column is-3">
+    <div class="card is-clickable" onclick="showModal('instructor-akshay-goel')" data-href="view Akshay Goel" data-label="open Modal">
+      <div class="card-content">
+        <div class="media">
+          
+          <div class="media-left">
+            <figure class="image is-64x64" style="background-image: url('https://images.hasgeek.com/embed/file/58ed12fd14694440b1357cde05ea9957'); background-size: cover; background-position: center;">
+            </figure>
+          </div>
+          
+          <div class="media-content">
+            <p class="title is-4">Akshay Goel</p>
+            <p class="subtitle is-6">Tech Lead, MoEngage Inc</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="instructor-akshay-goel" style="z-index:20;">
+      <div class="modal-background" onclick="hideModal('instructor-akshay-goel')"></div>
+      <div class="modal-content">
+        <div class="box">
+          <div class="media has-text-centered">
+
+            
+            <div class="media-left">
+              <figure class="image is-128x128" style="background-image: url('https://images.hasgeek.com/embed/file/58ed12fd14694440b1357cde05ea9957'); background-size: cover; background-position: center;">
+              </figure>
+            </div>
+            
+            <div class="media-content">
+              <p class="title is-4">Akshay Goel</p>
+              <p class="subtitle is-6">Tech Lead, MoEngage Inc</p>
+              
+              <a href="https://www.linkedin.com/in/akshay58538/" target="_blank">Linkedin</a>
+              
+            </div>
+          </div>
+          <div class="content">
+            <p>Akshay is a programming standards enthusiast and he comes with a strong background in Python and Java building various systems for scale earlier for Paypal and now MoEngage. He tries to make writing production-grade code as easy as a breeze for anyone and everyone. As Technical Architect at MoEngage, making systems (distributed obviously) dance to his tune is something he enjoys. Some of his major contributions have been building an in-memory cache, a python-based structural/contextual log writer, an ORM to build Structured/Unstructured Objects and saving them to any downstream database etc. Outside of work, he enjoys food and listening to music. He plays badminton regularly and loves competing there.</p>
+
+          </div>
+        </div>
+      </div>
+      <button class="modal-close is-large" onclick="hideModal('instructor-akshay-goel')"></button>
+    </div>
+  </div>
+  
+</div>
+
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+    
+
+
+  
+    
+    
+    
+    
+
+
+
+
+
+    
+
+  
+
+
+  
+    
+    
+    
+    
+
+
+
+
+
+    
+
+  
+
+
+  
+    
+    
+    
+    
+
+
+
+
+
+    
+
+  
+
+
+  
+    
+    
+    
+    
+
+
+
+
+
+    
+
+  
+
+
+  
+    
+    
+    
+    
+
+
+
+
+
+    
+
+  
+
+
+  
+    
+    
+    
+    
+
+
+
+
+
+    
+
+  
+
+
+  
+    
+    
+    
+    
+
+
+
+
+
+    
+
+  
+
+
+
+
+<div class="has-text-centered">
+    <h1 class="title">What else is happening?</h1>
+    <h2 class="subtitle">You may also be interested in these related events</h2>
+    <br>
+</div>
+
+<div class="columns is-centered is-multiline">
+
+</div>
+
+  </div>
+</section>
+
+
+
+<section class="section" id="tickets">
+  <div class="container">
+    <div class="has-text-centered">
+  <h1 class="title">Tickets</h1>
+</div>
+<div id="boxoffice-widget"><h2>Loading...</h2></div>
+
+  </div>
+</section>
+
+
+
+<section class="section "id="venue">
+  <div class="container">
+    <div class="has-text-centered">
+  <h1 class="title">Venue</h1>
+</div>
+<div id="venue-map" class="embed-map" data-label="ThoughtFactory, Bangalore" data-markerlat="12.95921" data-markerlng="77.64431" data-style="" data-accesstoken="" style="height: 400px; width: 100%; z-index: 0; margin-top:10px"><h2>Loading...</h2></div>
+<div class="has-text-centered">
+  <br>
+  
+  <div class="content">
+    <p>ThoughtFactory,
+Tower D, 2nd Floor,
+Diamond District, Bengaluru, Karnataka 560102</p>
+
+  </div>
+  
+  
+  <a class="button is-primary" href="https://goo.gl/maps/eaNceNnatu62" target="_blank">Directions</a>
+  
+</div>
+
+  </div>
+</section>
+
+
+
+
+
+  <section class="section bg-light"id="sponsor">
+  <div class="container">
+    <div class="has-text-centered">
+      <h1 class="title">Sponsors</h1>
+      <div class="content"><p>Sponsor for developer evangelism, community outreach, sales and hiring.</p>
+
+<p>Write to us for the sponsorship deck or for customized options at <a href="mailto:info@hasgeek.com">info@hasgeek.com</a></p>
+</div>
+      
+    </div>
+  </div>
+</section>
+<section class="section bg-light">
+  <div class="container">
+        
+          
+
+            
+
+          <div class="columns is-centered">
+              <div class="column is-4">
+                <h3 class="title is-4">Venue Partner</h3>
+              </div>
+              <div class="column is-8">
+                <div class="columns is-multiline">
+                  
+                    
+                    <div class="column is-6">
+                      <div class="card is-clickable has-text-centered" style="cursor: pointer;" onclick="showModal('sponsor-venue-partner-thoughtfactory')" data-href="view ThoughtFactory" data-label="open Modal">
+                        <div class="card-content">
+                          <div style="height: 8rem; align-items:center; justify-content: center; display: flex;">
+                            <figure class="image">
+                              <img src="https://images.hasgeek.com/embed/file/418dbca985664bf5aeb64de29c60550d" alt="ThoughtFactory"style="max-height: 8rem;width: auto;display: block;">
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal" id="sponsor-venue-partner-thoughtfactory" style="z-index:20;">
+                      <div class="modal-background" onclick="hideModal('sponsor-venue-partner-thoughtfactory')"></div>
+                      <div class="modal-content">
+                        <div class="box">
+                          <figure class="image">
+                            <img src="https://images.hasgeek.com/embed/file/418dbca985664bf5aeb64de29c60550d" alt="ThoughtFactory"style="max-height: 60px;width: auto; margin: auto; padding-bottom: 20px;">
+                          </figure>
+                          <div class="has-text-centered" style="padding-bottom: 20px;">
+                            <p><a href="https://www.axisbank.com/thoughtfactory/index.html" target="_blank" class="click" data-label="view ThoughtFactory">www.axisbank.com/thoughtfactory</a></p>
+                          </div>
+                          <div class="content">
+                            
+
+                          </div>
+                        </div>
+                      </div>
+                      <button class="modal-close is-large" onclick="hideModal('sponsor-venue-partner-thoughtfactory')"></button>
+                    </div>
+                  
+                </div>
+              </div>
+          </div>
+          
+        
+  </div>
+</section>
+
+
+
+
+
+
+<footer class="footer" id="hasgeek">
+  <div class="container">
+    <div class="content has-text-centered">
+      <img src="https://hasgeek.com/static/img/hg-banner.png" alt="" width="100px"><br><br>
+      <p>Rootconf is presented to you by HasGeek.</p>
+      <p><a href="http://hasgeek.com/" target="_blank">HasGeek</a> helps people in technology meet each other, collaborate on new opportunities and advance the state of the art. We organize conferences, hacknights, workshops and geekups, and provide tools for communities to self-organize.</p>
+      <p>We’ve created conferences around the themes of <a href="http://metarefresh.in/" target="_blank">front end engineering</a>, <a href="http://fifthelephant.in/" target="_blank">big data and cloud computing</a>, <a href="http://jsfoo.in/" target="_blank">JavaScript</a>, <a href="http://droidcon.in/" target="_blank">Android</a>, <a href="http://cartonama.com/" target="_blank">location-aware services</a> and <a href="http://rootconf.in/" target="_blank">DevOps</a>. Our <a href="http://hasjob.co" target="_blank">Job Board</a> is used by thousands of geeks every month to find new opportunities.</p>
+      <p>HasGeek is a technology company in the media business, bringing software automation to a traditionally people-intensive operation. HasGeek has organized over two dozen conferences attended by thousands of technology professionals, made several thousand connections, and built open source tools that are now used by many communities.</p>
+      <p>Email us: <a href="mailto:info@hasgeek.com">info@hasgeek.com</a> | Call us: <a href="tel:+917676332020">+91 7676 33 2020</a></p>
+      <p>Copyright © 2010-2018</p>
+      <p>All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery.sidr-2.2.1.min.js"></script>
+  <script src="../js/mustache.min.js"></script>
+  <script src="../js/siema.min.js"></script>
+
+  
+  <script src="../js/leaflet.js"></script>
+  
+
+
+
+
+<script>
+    window.EventDetails = {};
+    // carousel
+    const mySiema = new Siema({
+      perPage: {
+        768: 2,
+        1024: 3,
+      },
+    });
+    const prev = document.querySelector('#carousel-prev');
+    const next = document.querySelector('#carousel-next');
+
+prev.addEventListener('click', () => mySiema.prev());
+next.addEventListener('click', () => mySiema.next());
+</script>
+<script>
+  $(document).ready( function() {
+
+    var stickyNav = $(".nav-sticky");
+    var navHeight;
+    if (stickyNav.length > 0) {
+      stuck = "nav-stuck";
+      headerHeight = $(stickyNav[0]).offset().top;
+      nextSibling = stickyNav.parent().next()[0];
+      navHeight = stickyNav[0].clientHeight;
+      $(window).scroll(function() {
+        if( $(this).scrollTop() > headerHeight) {
+          stickyNav.parent().addClass(stuck);
+          nextSibling.style.marginTop = navHeight+"px";
+        } else {
+          stickyNav.parent().removeClass(stuck);
+          nextSibling.style.marginTop = 0;
+        }
+      });
+    }
+    $("a").click(function (e) {
+      var goto = $(this).attr('data-href');
+      if (goto) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Scroll to section
+        var offset_top = $(goto).offset().top - navHeight || 0;
+        $("body,html").stop(true,true).animate({scrollTop:offset_top},300)
+      }
+    });
+
+    
+      initLeaflets();
+    
+
+    $('#sidebar').show();
+    $('.nav-toggle').sidr({
+      name: 'sidebar',
+      source: '#sidebar',
+      renaming: false
+    });
+
+  })
+
+  function goToUrl(url) {
+    window.location.href = url;
+  }
+  function goToUrlNewTab(url) {
+    var win = window.open(url, '_blank');
+    win.focus();
+  }
+  function showModal(modalId) {
+    $('#'+modalId).addClass('is-active');
+  }
+  function hideModal(modalId) {
+    $('#'+modalId).removeClass('is-active');
+  }
+</script>
+
+  <script type="text/javascript">
+$(document).ready(function() {
+
+  var boxofficeUrl = "https://boxoffice.hasgeek.com";
+
+  $.get({
+    url: boxofficeUrl + "/api/1/boxoffice.js",
+    crossDomain: true,
+    timeout: 8000,
+    retries: 5,
+    retryInterval: 8000,
+    success: function(data) {
+      var boxofficeScript = document.createElement('script');
+      boxofficeScript.innerHTML = data.script;
+      document.getElementsByTagName('body')[0].appendChild(boxofficeScript);
+    },
+    error: function(response) {
+      var ajaxLoad = this;
+      ajaxLoad.retries -= 1;
+      var errorMsg;
+      if (response.readyState === 4) {
+        errorMsg = "Server error, please try again later.";
+        $('#boxoffice-widget p').html(errorMsg);
+      }
+      else if (response.readyState === 0) {
+        if (ajaxLoad.retries < 0) {
+          if(!navigator.onLine) {
+            errorMsg = "Unable to connect. There is no network!";
+            $('#boxoffice-widget p').html(errorMsg);
+          }
+          else {
+            errorMsg = "<p>Unable to connect. If you are behind a firewall or using any script blocking extension (like Privacy Badger), please ensure your browser can load boxoffice.hasgeek.com, api.razorpay.com and checkout.razorpay.com .</p>";
+            $('#boxoffice-widget p').html(errorMsg);
+          }
+        } else {
+          setTimeout(function() {
+            $.get(ajaxLoad);
+          }, ajaxLoad.retryInterval);
+        }
+      }
+    }
+  });
+
+  window.addEventListener('onBoxofficeInit', function (e) {
+    window.Boxoffice.init({
+      org: "hasgeek",
+      itemCollection: "e2ea67ca-e20a-4f89-80c9-20641e04c13d",
+      paymentDesc: "Workshop: Writing unit tests: It's now or never!",
+      
+    });
+  }, false);
+
+});
+</script>
+
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-19123154-21', 'auto');
+  ga('send', 'pageview');
+
+  $(document).ready( function() {
+
+    EventDetails.sendGA = function (category, action, label) {
+      if (typeof ga !== "undefined") {
+        ga('send', { hitType: 'event', eventCategory: category, eventAction: action, eventLabel: label});
+      }
+    };
+
+    // Function that tracks a click button in Google Analytics.
+    $('.button').click(function(event) {
+      var target = $(this).attr('href');
+      var action = $(this).html();
+      EventDetails.sendGA('click', action, target);
+    });
+
+    $('.is-clickable').click(function(event) {
+      var target = $(this).data('href');
+      var action = $(this).data('label');
+      EventDetails.sendGA('click', action, target);
+    });
+
+    $('.click').click(function(event) {
+      var target = $(this).attr('href');
+      var action = $(this).data('label');
+      EventDetails.sendGA('click', action, target);
+    });
+
+    $('.nav-item').click(function(event) {
+      var target = $(this).data('href');
+      EventDetails.sendGA('click', target, target);
+    });
+
+    $('#mc-embedded-subscribe').click(function(event) {
+      EventDetails.sendGA('event_page_blog', 'subscribe', '');
+    });
+
+    
+  });
+</script>
+
+<!-- Twitter universal website tag code -->
+<script>
+  !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+  },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+  a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+  // Insert Twitter Pixel ID and Standard Event data below
+  twq('init', 'o0bfj');
+  twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '939847969521385'); 
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+   <img height="1" width="1" 
+  src="https://www.facebook.com/tr?id=939847969521385&ev=PageView
+  &noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript"> _linkedin_partner_id = "245595"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=245595&fmt=gif" /> </noscript>
+
+<script>
+$(document).ready( function() {
+  $(document).on( "boxofficeTicketingEvents", function(event, userAction, label, value) {
+    
+    if (typeof ga !== "undefined") {
+      ga('send', { hitType: 'event', eventCategory: 'ticketing', eventAction: userAction, eventLabel: label, eventValue: value});
+    }
+
+    if (typeof fbq !== "undefined") {
+      if (userAction == 'add ticket' || userAction == 'First interaction') {
+        fbq('track', 'AddToCart');
+      } else if (userAction == 'checkout') {
+        fbq('track', 'InitiateCheckout');
+      } else if (userAction == 'order creation') {
+        fbq('track', 'AddPaymentInfo');
+      } else if(userAction == 'capture payment') {
+        fbq('track', 'Purchase', {value: value, currency: 'INR'});
+      } else if(userAction == 'booking complete') {
+        fbq('track', 'CompleteRegistration');
+      }
+    }
+
+    if (typeof twq !== "undefined") {
+      if (userAction == 'add ticket' || userAction == 'First interaction') {
+        twq('track', 'AddToCart', {
+          content_ids: ['ticketing'], // Required
+          content_type: 'tickets', // Required
+          content_name: 'tickets'
+        });
+      } else if(userAction == 'booking complete') {
+        twq('track','Purchase', {
+          value: value,
+          currency: 'INR',
+          num_items: '1',
+        });
+      }
+    }
+
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+  // Unregister service worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      if(registrations.length) {
+        for (var index = 0; index < registrations.length; index++) {
+          registrations[index].unregister();
+        }
+      }
+    });
+  }
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('https://rootconf.in/sw.js').then(function () {
+//     // console.log('Service worker registered');
+//     }).catch(function() {
+//     // console.log('Service worker registration failed');
+//   });
+// };
+</script>
+
+
+</body>
+</html>
