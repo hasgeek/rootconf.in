@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9">     <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js">        <!--<![endif]-->
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Rootconf: Conference on DevOps and cloud infrastructure in Bangalore, India">
+<meta name="author" content="HasGeek and friends">
+<meta name="referrer" content="origin">
+
+<meta property="og:title" content="Rootconf 2016"/>
+<meta property="og:image" content="https://rootconf.in/_themes/rootconf2016/img/logo.png"/>
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="350" />
+<meta property="og:image:height" content="350" />
+<meta property="og:url" content="https://rootconf.in/2016/"/>
+<meta property="og:description" content="Rootconf: Conference on devops and cloud infrastructure in Bangalore, India"/>
+
+<link rel="shortcut icon" type="image/x-icon" href="https://rootconf.in/favicon.ico">
+<link rel="icon" type="image/x-icon" href="https://rootconf.in/favicon.ico">
+
+<title>Rootconf 2016</title>
+  <link rel="stylesheet" href="../_themes/rootconf2016/css/vendor/bootstrap.min.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/rootconf2016/css/font-awesome.min.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/rootconf2016/css/typography.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/rootconf2016/css/layout.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/rootconf2016/css/theme.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/rootconf2016/css/objects.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/rootconf2016/css/custom.css.packed.css"/>
+  
+
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.min.css" />
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" />
+<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Rosario:400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../_baseframe/css/networkbar.css">
+
+<script src="../_themes/rootconf2016/js/vendor/modernizr-2.6.2.js"></script>
+
+<!-- errorception -->
+<script>
+    (function(_,e,rr,s){_errs=[s];var c=_.onerror;_.onerror=function(){var a=arguments;_errs.push(a);
+    c&&c.apply(this,a)};var b=function(){var c=e.createElement(rr),b=e.getElementsByTagName(rr)[0];
+    c.src="//beacon.errorception.com/"+s+".js";c.async=!0;b.parentNode.insertBefore(c,b)};
+    _.addEventListener?_.addEventListener("load",b,!1):_.attachEvent("onload",b)})
+    (window,document,"script","56f13edc2777d31309000c21");
+</script>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1673537442887544');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1673537442887544&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+
+<body class="fill-ghostwhite">
+
+<div class="fill-silver">
+  
+    <div id="hg-bar" class="no-print">
+    <div class="container">
+          <ul id="hg-barlinks">
+            
+    <li id="hg-networkbar-home" class="strong"><a href="https://hasgeek.com/">HasGeek</a></li>
+    <li id="hg-networkbar-hasjob"><a href="https://hasjob.co/">Hasjob</a></li>
+    <li id="hg-networkbar-hgtv"><a href="https://hasgeek.tv/">HGTV</a></li>
+    <li id="hg-networkbar-talkfunnel"><a href="https://talkfunnel.com/">Talkfunnel</a></li>
+    <li id="hg-networkbar-events" class="selected"><a href="index.html#" class="hg-submenu">Events</a>
+        <ul>
+          
+    <li id="hg-networkbar-metarefresh"><a href="https://metarefresh.in/">Meta Refresh</a></li>
+    <li id="hg-networkbar-rootconf"><a href="https://rootconf.in/">Rootconf</a></li>
+    <li id="hg-networkbar-fifthelephant"><a href="https://fifthelephant.in/">The Fifth Elephant</a></li>
+    <li id="hg-networkbar-jsfoo"><a href="https://jsfoo.in/">JSFoo</a></li>
+    <li id="hg-networkbar-droidcon"><a href="https://droidcon.in/">Droidcon India</a></li>
+    <li id="hg-networkbar-pastevents" class="hg-menu-section">Past events</li>
+    <li id="hg-networkbar-angularjs-miniconf"><a href="https://metarefresh.in/2014/angularjs-miniconf">AngularJS Miniconf</a></li>
+    <li id="hg-networkbar-cartonama"><a href="https://cartonama.com/2012">Cartonama Conference</a></li>
+    <li id="hg-networkbar-phpcloud"><a href="https://phpcloud.hasgeek.com/">Scaling PHP in the Cloud</a></li>
+    <li id="hg-networkbar-androidcamp"><a href="https://androidcamp.hasgeek.com/">AndroidCamp</a></li>
+    <li id="hg-networkbar-doctypehtml5"><a href="http://www.doctypehtml5.in/">DocType HTML5</a></li>
+        </ul></li>
+          </ul>
+        <ul id="hg-usertools">
+          
+            <li><a href="https://rootconf.in/login">Login or sign up</a></li>
+        </ul>
+    </div>
+  </div>
+  
+</div>
+
+
+<div id="page">
+
+
+<header class="masthead-home fill-dark" id="header">
+  <div id="lamp">
+    <div id="wire"></div>
+      <div id="holder"></div>
+      <div id="bulb"></div>
+      <div id="light"></div>
+  </div>
+  
+  <div class="display-board-container">
+
+    <div class="display-board push-one">
+      <div class="white extralarge text-center">
+        <div class="link line2 text-center title-type push-3q-top">
+          <div class="logo"><img src="https://imgee.s3.amazonaws.com/imgee/769dc463009d4cf09be7352c8c7b3628.png" width="80px" alt="###">rootconf</div><!-- <div id="blink-wrapper"><span id="blink"></span></div> -->
+        </div>
+        <p class="tiny prose-type space-half-top">Conference &amp; Workshops on DevOps and Cloud Infrastructure</p>
+        <div class="intro row-fluid secondary prose prose-type thin space-one-top text-center">
+          <p class="nospace">14 - 15 April 2016 | MLR Convention Centre, JP Nagar</p>
+        </div>
+      </div>
+      <div class="push-one text-center">
+        <a href="https://hasgeek.tv/rootconf/2016" class="button gap-half" title="HasGeek TV" target="_blank">Videos</a>
+        <a href="https://www.flickr.com/photos/hasgeek/albums/72157665065670493" title="Rootconf photos" class="button gap-half" target="_blank">Photos</a>
+      </div>
+    </div> 
+
+    <div id="mast-img"></div> 
+    <div id="mast-floor">
+      <div class="masthead-test">
+        <img src="https://imgee.s3.amazonaws.com/imgee/ae4c466819ce4701bbdb851b8988ed1e_w992_h225.jpeg" alt="">
+      </div>
+    </div> 
+    <p class="large white scroll-down link-silent nospace text-right pad-two"><a href="index.html#annoucements" class="smooth-scroll fa fa-chevron-down visible-lg white"></a></p>
+
+  </div>
+</header>
+
+
+
+<div id="nav-home">
+  <nav class="navbar navbar-default" id="site-nav" role="navigation">
+    <div class="sitebar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand smooth-scroll" href="index.html#header">Rootconf</a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html#annoucements" class="smooth-scroll">Announcements</a></li>
+          <li><a href="index.html#highlights" class="smooth-scroll">Featured speakers</a></li>
+          <li><a href="index.html#schedule" class="smooth-scroll">Schedule</a></li>
+          <li><a href="index.html#venue" class="smooth-scroll">Venue</a></li>
+          <li><a href="index.html#sponsors" class="smooth-scroll">Sponsors</a></li>
+          <li class="dropdown">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+            <ul class="dropdown-menu">   
+              <li><a href="index.html#about" class="smooth-scroll">About HasGeek</a></li>
+              <li><a href="code-of-conduct.html">Code of conduct</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+  
+    
+        
+      <section id="annoucements" class="push-three-top push-one-bottom clearfix fill-ghostwhite">
+  <div class="row-fluid container">
+    <div class="regular text-justify">
+    	<p>Rootconf is India’s principal conference where systems and operations engineers share real world knowledge about building resilient and scalable systems. The theme for this edition was learning from failure.</p>
+      <p>The 2016 edition is over and Rootconf will be back next year on 11 and 12 May, at the MLR Convention Centre, Bangalore</p>
+      <p>For more updates, follow us on <a href="https://www.facebook.com/rootconf" target="_blank">Facebook</a>, <a href="https://twitter.com/rootconf" target="_blank">Twitter</a> and <a href="https://www.youtube.com/user/hasgeek" title="Watch the latest videos from HasGeek" target="_blank">YouTube</a>.</p>
+      <p><a href="http://hasgeek.us2.list-manage.com/subscribe?u=c84c1486d2d6a025417c5d146&id=47afa263c6" target="_blank" class="block-link">Sign up</a> to receive updates and information about tickets, speakers, schedule and more.</p>
+    </div>
+  </div>
+</section>
+    
+  
+    
+        
+      
+  
+  <section id="highlights" class="featured-speakers push-two clearfix fill-blue">
+  <h2 class="text-center push-1q-bottom large all-caps">Featured speakers</h2>
+  
+      
+      <div class="row-fluid container space-two-top">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 legible-prose">
+          <ul class="space-half-top list-space-line list-plain list-silent row">
+      
+            <li class="col-sm-4 col-xs-12 text-center">
+              <a href=" https://rootconf.talkfunnel.com/2016/1-working-in-and-with-open-source-communities" target="_blank"><span class="img-wrapper">
+                <img class="photo featured-speaker-grayscale circle" src="https://images.hasgeek.com/embed/file/a292f38775514b20bf96e50c70200534">
+              </span></a> 
+              <h2 class="secondary space-half-top space-1q-bottom"><a href=" https://rootconf.talkfunnel.com/2016/1-working-in-and-with-open-source-communities" target="_blank">Working in and with Open Source Communities</a></h2>
+              <h3 class="regular semibold space-1q-top nospace-bottom">Bernd Erk</h3>
+              <p class="nopsace-top space-1q-bottom secondary"><a  class="twitter-blue secondary-prose" href="https://twitter.com/gethash" target="_blank">@gethash</a></p>
+              <h5 class="gray space-1q secondary-prose">CEO at Netways <br>&amp; co-founder of the Icinga Project</h5>
+              
+            </li>
+      
+    
+      
+            <li class="col-sm-4 col-xs-12 text-center">
+              <a href=" https://rootconf.talkfunnel.com/2016/9-continuous-deployment-at-scale" target="_blank"><span class="img-wrapper">
+                <img class="photo featured-speaker-grayscale circle" src="https://images.hasgeek.com/embed/file/901c25cc4fb844e68e6bf74d511af8ad">
+              </span></a> 
+              <h2 class="secondary space-half-top space-1q-bottom"><a href=" https://rootconf.talkfunnel.com/2016/9-continuous-deployment-at-scale" target="_blank">Continuous deployment at Scale</a></h2>
+              <h3 class="regular semibold space-1q-top nospace-bottom">Premshree Pillai</h3>
+              <p class="nopsace-top space-1q-bottom secondary"><a  class="twitter-blue secondary-prose" href="https://twitter.com/premshree" target="_blank">@premshree</a></p>
+              <h5 class="gray space-1q secondary-prose">Senior engineer at Etsy</h5>
+              
+            </li>
+      
+    
+      
+            <li class="col-sm-4 col-xs-12 text-center">
+              <a href=" https://rootconf.talkfunnel.com/2016/25-lessons-in-moving-from-physical-hosts-to-mesos" target="_blank"><span class="img-wrapper">
+                <img class="photo featured-speaker-grayscale circle" src="https://images.hasgeek.com/embed/file/a2755c104d494543a9d5075db68eb8ec">
+              </span></a> 
+              <h2 class="secondary space-half-top space-1q-bottom"><a href=" https://rootconf.talkfunnel.com/2016/25-lessons-in-moving-from-physical-hosts-to-mesos" target="_blank">Lessons in moving from physical hosts to Mesos</a></h2>
+              <h3 class="regular semibold space-1q-top nospace-bottom">Raj Shekhar</h3>
+              <p class="nopsace-top space-1q-bottom secondary"><a  class="twitter-blue secondary-prose" href="https://twitter.com/ilunatech" target="_blank">@ilunatech</a></p>
+              <h5 class="gray space-1q secondary-prose">Senior site reliability engineer at Twitter</h5>
+              
+            </li>
+      
+          </ul>
+        </div>    
+      </div>
+      
+    
+  <p class="space-half regular text-center"><a href="https://hasgeek.tv/rootconf/2016" class="button" target="_blank">Watch Videos on HasGeek TV</a></p>
+</section>
+
+    
+  
+    
+        
+      
+<script id="scheduletemplate" type="text/x-mustache-template">
+  <h4 class="text-left space-two legible"><i class="fa fa-calendar"></i> {{date}}</h4>
+  <table class="schedule-table" id="{{tableid}}">
+    <thead>
+      <tr>
+        <th class="time semi-bold text-center regular"><div>Time</div></th>
+        {{#rooms}}
+        {{#track}}
+          <th class="track{{track}} semi-bold text-center regular" data-td="track-{{track}}"><div>{{title}}</div></th>
+        {{/track}}
+        {{^track}}
+          <th class="track{{track}} semi-bold tab-active text-center regular" data-td="track-{{track}}"><div>{{title}}</div></th>
+        {{/track}}
+        {{/rooms}}
+      </tr>
+    </thead>
+    <tbody>
+    {{#slots}}
+      {{#issession}}
+      <tr>
+        <td class="time" scope="row">
+          <div class="time-icon"></div>
+          <p class="time-text bold">{{slot}}</p>
+        </td>
+        {{#sessions}}
+        {{#is_break}}
+        <td colspan="2" class="centered" rowspan={{rowspan}}>
+          <div class="content">
+            <h4 class="space-1q title">{{title}}</h4>
+            <p class="space-1q duration">{{start}} - {{end}}</p>
+          </div>
+        </td>       
+        {{/is_break}}
+        {{^is_break}}
+        {{#track}}
+          <td class="track-{{track}}" rowspan={{rowspan}}>
+        {{/track}}
+        {{^track}}
+          <td class="track-{{track}} tab-active" rowspan={{rowspan}}>
+        {{/track}}
+            <div class="content">
+              <h4 class="link-silent space-1q">
+                {{#description}}
+                <i class="fa fa-caret-right js-expand expand-icon"></i>
+                {{/description}}
+                {{#proposal_url}}
+                <a href="https://rootconf.in/2016/{{proposal_url}}" target="_blank" class="title">{{title}}</a>
+                {{/proposal_url}}
+                {{^proposal_url}}
+                <span class="title">{{title}}</span>
+                {{/proposal_url}}
+              </h4>
+              {{#description}}
+              <div class="space-1q description-text text-left">{{{description}}}</div>
+              {{/description}}
+              {{#speaker}}
+              <p class="space-1q speaker">{{speaker}}</p>
+              {{/speaker}}
+              {{#title}}
+              <p class="space-1q duration">{{start}} - {{end}}</p>
+              {{/title}}
+              {{#roomTitle}}
+              <p class="space-1q venue"><i class="fa fa-map-marker"></i> {{roomTitle}}, MLR Convention Centre</p>
+              {{/roomTitle}}
+            </div>
+          </td>
+        {{/is_break}}
+        {{/sessions}}
+      </tr>
+      {{/issession}}
+    {{/slots}}
+    </tbody>
+  </table>
+</script>
+
+<section id="schedule" class="page-section clearfix fill-ghostwhite push-two">
+  <div class="container schedule-container">
+    <div class="text-center" id="conference-schedule">
+      <h2 class="text-center push-1q-bottom large all-caps">Conference Schedule</h2>
+      <div class="schedule-table-container text-center" id="conferenceschedule">
+        <p class="text-center loadingtxt"><a class="button dark regular" href="https://rootconf.talkfunnel.com/2016/schedule" target="_blank">View Schedule</a></p>
+      </div>
+    </div>
+  </div>  
+</section>
+    
+  
+    
+        
+      
+  
+  
+  <section id="venue" class="venue push-two clearfix fill-blue">
+  <div class="container">
+      <div class="row">
+          <h2 class="text-center push-1q-bottom large all-caps"> Conference Venue </h2>
+      </div>
+      <div class="row">
+      
+          <div class="pad-line">
+              <div class="legible-prose text-center">
+                <div class="regular-prose space-one">
+                  <p class="legible semibold">MLR Convention Centre</p>
+                  <p class="legible">Brigade Millenium Complex, J.P. Nagar 7th Phase<br>Bangalore, Karnataka  India. <br>Phone: 080-40182222<br></p>
+                </div>
+              </div>
+          </div>
+          <div class="no-js-hidden space-one clearfix">
+              <h3 class="visuallyhidden">Map</h3>
+              <div class="legible-prose prose prose-type clearfix">
+                  <div
+                    class="border-one leaflet-map" id="toner" class="map"
+                    data-label="MLR Convention Centre, J. P. Nagar"
+                    data-zoom="16"
+                    data-marker="12.891476, 77.585079">
+                    <p class="text-center regular">Loading ...</p>
+                  </div>
+              </div>
+          </div>
+          
+
+          
+          <div class="space-one text-center">
+            <p class="regular semibold"><a href="http://goo.gl/maps/pTOsq" class="button secondary dark heading"target="_blank">Find directions</a></p>
+          </div>
+          
+
+        
+      </div>
+  </div>
+</section>
+
+    
+  
+    
+        
+      <section id="sponsors" class="sponsors push-two clearfix fill-dark">
+  <div class="row-fluid container">
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 push-one-bottom">
+      <h2 class="extralarge all-caps">Sponsors</h2>
+    </div>
+     <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 secondary space-one-top">
+      <p>
+        Showcase platforms, tools and APIs.<br>
+        Engage the best developers and designers.
+      </p>
+      
+      <p class="title-type secondary space-one-top">
+        For further information on sponsorship, please write to us at <a href="mailto:info@hasgeek.com">info@hasgeek.com</a> or call us at <a href="tel: +91-767-633-2020">+91-767-633-2020</a>
+        <!-- <a class="button button" target="_blank" href="http://hsgk.in/1STVG2U">Get Sponsorship Deck</a> -->
+      </p>
+    </div>
+  </div>
+  
+    
+    
+      
+      
+        
+        <div id="sponsors-platinum" class="row-fluid container space-two-top">
+          <h3 class="col-lg-5 col-md-5 col-sm-5 col-xs-12 legible all-caps space-one-bottom">Platinum</h3>
+
+          <ul class="col-lg-7 col-md-7 col-sm-7 col-xs-12 nospace-bottom list-plain link-silent clearfix list-space-line sponsor-xl nospace-ul">
+        
+          <li>
+              <a href="sponsors.html#platinum-yubico"  class="occupy sponsorlogo ">
+                <img alt="Yubico" src="https://images.hasgeek.com/embed/file/a0fe74c46132434b8d397a0e79c63236">
+              </a>
+          </li>
+        
+          </ul>
+        </div>
+        
+      
+    
+      
+      
+        
+        <div id="sponsors-gold" class="row-fluid container space-two-top">
+          <h3 class="col-lg-5 col-md-5 col-sm-5 col-xs-12 legible all-caps space-one-bottom">Gold</h3>
+
+          <ul class="col-lg-7 col-md-7 col-sm-7 col-xs-12 nospace-bottom list-plain link-silent clearfix list-space-line sponsor-l nospace-ul">
+        
+          <li>
+              <a href="sponsors.html#gold-go-jek"  class="occupy sponsorlogo ">
+                <img alt="GO-JEK" src="https://images.hasgeek.com/embed/file/ec02d6fffacc4467b8b2e0596e21ef17">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="sponsors.html#gold-sequoia-india"  class="occupy sponsorlogo ">
+                <img alt="Sequoia India" src="https://images.hasgeek.com/embed/file/c34305ab6d434074808fc43397b27203">
+              </a>
+          </li>
+        
+          </ul>
+        </div>
+        
+      
+    
+      
+      
+        
+        <div id="sponsors-silver" class="row-fluid container space-two-top">
+          <h3 class="col-lg-5 col-md-5 col-sm-5 col-xs-12 legible all-caps space-one-bottom">Silver</h3>
+
+          <ul class="col-lg-7 col-md-7 col-sm-7 col-xs-12 nospace-bottom list-plain link-silent clearfix list-space-line sponsor-m nospace-ul">
+        
+          <li>
+              <a href="sponsors.html#silver-endurance"  class="occupy sponsorlogo ">
+                <img alt="Endurance" src="https://images.hasgeek.com/embed/file/90b1f60b56574d84a4f73932481715da">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="sponsors.html#silver-intuit"  class="occupy sponsorlogo ">
+                <img alt="Intuit" src="https://images.hasgeek.com/embed/file/ecbee318c1174be6a7f5847c8667c791">
+              </a>
+          </li>
+        
+          </ul>
+        </div>
+        
+      
+    
+      
+      
+        
+        <div id="sponsors-bronze" class="row-fluid container space-two-top">
+          <h3 class="col-lg-5 col-md-5 col-sm-5 col-xs-12 legible all-caps space-one-bottom">Bronze</h3>
+
+          <ul class="col-lg-7 col-md-7 col-sm-7 col-xs-12 nospace-bottom list-plain link-silent clearfix list-space-line sponsor-m nospace-ul">
+        
+          <li>
+              <a href="sponsors.html#bronze-citruspay"  class="occupy sponsorlogo ">
+                <img alt="Citruspay" src="https://images.hasgeek.com/embed/file/1f88b23d099348d79450e9d4ab368c17">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="sponsors.html#bronze-e2e-networks"  class="occupy sponsorlogo ">
+                <img alt="E2E Networks" src="https://images.hasgeek.com/embed/file/be1966faf8524723a7beceac3a5410b4">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="sponsors.html#bronze-freecharge"  class="occupy sponsorlogo ">
+                <img alt="Freecharge" src="https://images.hasgeek.com/embed/file/3400f86a77e243e6be722ab35c469349">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="sponsors.html#bronze-quintype"  class="occupy sponsorlogo ">
+                <img alt="Quintype" src="https://images.hasgeek.com/embed/file/c9b0221acd904f0d968c9feba0c6fefd">
+              </a>
+          </li>
+        
+          </ul>
+        </div>
+        
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+        
+        <div id="sponsors-community" class="row-fluid container space-two-top">
+          <h3 class="col-lg-5 col-md-5 col-sm-5 col-xs-12 legible all-caps space-one-bottom">Community Sponsor</h3>
+
+          <ul class="col-lg-7 col-md-7 col-sm-7 col-xs-12 nospace-bottom list-plain link-silent clearfix list-space-line sponsor-m nospace-ul">
+        
+          <li>
+              <a href="sponsors.html#community-fedora"  class="occupy sponsorlogo ">
+                <img alt="Fedora" src="https://images.hasgeek.com/embed/file/af60f8fc4265463dbc0b42cfd3a33c60">
+              </a>
+          </li>
+        
+          </ul>
+        </div>
+        
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+        
+        <div id="sponsors-workshop-partners" class="row-fluid container space-two-top">
+          <h3 class="col-lg-5 col-md-5 col-sm-5 col-xs-12 legible all-caps space-one-bottom">Workshop Partners</h3>
+
+          <ul class="col-lg-7 col-md-7 col-sm-7 col-xs-12 nospace-bottom list-plain link-silent clearfix list-space-line sponsor-s nospace-ul">
+        
+          <li>
+              <a href="http://axilor.com/" target="_blank" class="occupy sponsorlogo ">
+                <img alt="Axilor" src="https://images.hasgeek.com/embed/file/c588d9caadd4460895ce8b0f679d8fcc">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="http://numabengaluru.com/" target="_blank" class="occupy sponsorlogo ">
+                <img alt="NUMA Bengaluru" src="https://images.hasgeek.com/embed/file/f9da5cc2fe82442faf0367de8f9df6a0">
+              </a>
+          </li>
+        
+          </ul>
+        </div>
+        
+      
+    
+  
+</section>
+    
+  
+
+
+<footer id="about" class="page-footer push-two fill-black clearfix">
+  <div class="text-center secondary gray container">
+    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+      <h3><a class="ir hasgeek-logo center-block space-one-top link-silent" href="https://hasgeek.com/">HasGeek</a></h3>
+      <p><a href="http://hasgeek.com/" target="_blank">HasGeek</a> helps people in technology meet each other, collaborate on new opportunities and advance the state of the art. We organize conferences, hacknights, workshops and geekups, and provide tools for communities to self-organize.</p>
+      <p>We’ve created conferences around the themes of <a href="http://metarefresh.in/" target="_blank">front end engineering</a>, <a href="http://fifthelephant.in/" target="_blank">big data and cloud computing</a>, <a href="http://jsfoo.in/" target="_blank">JavaScript</a>, <a href="http://droidcon.in/" target="_blank">Android</a>, <a href="http://cartonama.com/" target="_blank">location-aware services</a> and <a href="http://rootconf.in/" target="_blank">DevOps</a>. Our <a href="http://hasjob.co" target="_blank">Job Board</a> is used by thousands of geeks every month to find new opportunities.</p>
+      <p>HasGeek is a technology company in the media business, bringing software automation to a traditionally people-intensive operation. HasGeek has organized over two dozen conferences attended by thousands of technology professionals, made several thousand connections, and built open source tools that are now used by many communities.</p>
+      <div class="credits space-two">  
+        <h2 class="calm">The Team</h2>
+        <p>Editorial Panel: Pankaj Kaushal, Trouble and Zainab Bawa.</p>
+        <p>HasGeek Team: Anish TP, Beli Bopaiah, Hari C M, Jyothsna Madabusi, Karthik Balakrishnan, Kiran Jonnalagadda, Manjunath AK, Murali Krishnan, Shreyas Satish, Sindhu S, Vidya Ramakrishnan and Zainab Bawa.</p>
+        <p>A special thanks to all the volunteers. Adarsh Chandran, Aditya Bhushan Dwivedi, Aditya Kathpalia, Anusanthya S, Ashok Sahoo, Harshal Bhatia, Jessy James, Nikhil Prakash, Pankaj Manali, Rahul Rayaprolu, Rhythm Walia, Sai Charan, Santosh Rajan, Shashank Mehta, Shruthi, Vinod Pillai and Vishnu.</p>
+      </div>
+      <p>Copyright &copy; 2010–16. All rights reserved.</p>
+      <p><a href="mailto:info@hasgeek.com?subject=Hello Rootconf">info@hasgeek.com</a> /
+      <a href="tel:+918067684422" class="link-silent">+91-80-67684422</a></p>
+      <div class="legible space-one centered gray">
+        <ul class="list-plain">
+          <li class="inline-block gap-1q"><a href="https://twitter.com/rootconf" target="_blank" class="silent link-silent"><i class="fa fa-twitter"></i></a></li>
+          <li class="inline-block gap-1q"><a href="https://www.facebook.com/rootconf" target="_blank" class="silent link-silent"><i class="fa fa-facebook"></i></a></li>
+          <li class="inline-block gap-1q"><a href="https://www.youtube.com/user/hasgeek" target="_blank" class="silent link-silent"><i class="fa fa-youtube"></i></a></li>
+          <li class="inline-block gap-1q"><a href="https://www.flickr.com/photos/hasgeek/sets/" target="_blank" class="silent link-silent"><i class="fa fa-flickr"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</div><!-- #page -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../_themes/rootconf2016/js/vendor/jquery-2.2.0.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.3/mustache.min.js"></script>
+  <script src="../_themes/rootconf2016/js/vendor/bootstrap.min.js.packed.js"></script>
+  <script src="../_themes/rootconf2016/js/maps.js.packed.js"></script>
+  <script src="../_themes/rootconf2016/js/main.js.packed.js"></script>
+  
+
+<script>
+// Google Analytics
+if (location.hostname == 'rootconf.in') {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-19123154-21', 'auto');
+  ga('send', 'pageview');
+}
+</script>
+
+
+<!-- Prompt IE 6 users to install Chrome Frame. -->
+<!-- chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+
+</body>
+</html>

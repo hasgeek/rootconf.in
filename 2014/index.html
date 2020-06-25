@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9">     <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js">        <!--<![endif]-->
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Rootconf: Conference on devop and cloud infrastructure in Bangalore, India">
+<meta name="author" content="HasGeek and friends">
+
+<meta property="og:title" content="Rootconf 2014"/>
+<meta property="og:image" content="https://rootconf.in/_themes/rootconf2014/img/logo.png"/>
+<meta property="og:url" content="https://rootconf.in/2014/"/>
+<meta property="og:description" content="Rootconf: Conference on devop and cloud infrastructure in Bangalore, India"/>
+
+<link rel="shortcut icon" type="image/x-icon" href="https://rootconf.in/favicon.ico">
+<link rel="icon" type="image/x-icon" href="https://rootconf.in/favicon.ico">
+
+<title>Rootconf 2014</title>
+  <link rel="stylesheet" href="../_themes/rootconf2014/css/vendor/bootstrap.min.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/rootconf2014/css/font-awesome.min.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/rootconf2014/css/typography.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/rootconf2014/css/layout.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/rootconf2014/css/theme.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/rootconf2014/css/objects.css.packed.css"/>
+  <link rel="stylesheet" href="../_themes/rootconf2014/css/custom.css.packed.css"/>
+  
+
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.min.css" />
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" />
+<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Rosario:400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../_baseframe/css/networkbar.css">
+
+<script src="../_themes/rootconf2014/js/vendor/modernizr-2.6.2.js"></script>
+
+<script type="text/javascript" src="https://use.typekit.net/ewq6otu.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body class="fill-greengray">
+
+<div class="fill-silver">
+  
+    <div id="hg-bar" class="no-print">
+    <div class="container">
+          <ul id="hg-barlinks">
+            
+    <li id="hg-networkbar-home" class="strong"><a href="https://hasgeek.com/">HasGeek</a></li>
+    <li id="hg-networkbar-hasjob"><a href="https://hasjob.co/">Hasjob</a></li>
+    <li id="hg-networkbar-hgtv"><a href="https://hasgeek.tv/">HGTV</a></li>
+    <li id="hg-networkbar-talkfunnel"><a href="https://talkfunnel.com/">Talkfunnel</a></li>
+    <li id="hg-networkbar-events" class="selected"><a href="index.html#" class="hg-submenu">Events</a>
+        <ul>
+          
+    <li id="hg-networkbar-metarefresh"><a href="https://metarefresh.in/">Meta Refresh</a></li>
+    <li id="hg-networkbar-rootconf"><a href="https://rootconf.in/">Rootconf</a></li>
+    <li id="hg-networkbar-fifthelephant"><a href="https://fifthelephant.in/">The Fifth Elephant</a></li>
+    <li id="hg-networkbar-jsfoo"><a href="https://jsfoo.in/">JSFoo</a></li>
+    <li id="hg-networkbar-droidcon"><a href="https://droidcon.in/">Droidcon India</a></li>
+    <li id="hg-networkbar-pastevents" class="hg-menu-section">Past events</li>
+    <li id="hg-networkbar-angularjs-miniconf"><a href="https://metarefresh.in/2014/angularjs-miniconf">AngularJS Miniconf</a></li>
+    <li id="hg-networkbar-cartonama"><a href="https://cartonama.com/2012">Cartonama Conference</a></li>
+    <li id="hg-networkbar-phpcloud"><a href="https://phpcloud.hasgeek.com/">Scaling PHP in the Cloud</a></li>
+    <li id="hg-networkbar-androidcamp"><a href="https://androidcamp.hasgeek.com/">AndroidCamp</a></li>
+    <li id="hg-networkbar-doctypehtml5"><a href="http://www.doctypehtml5.in/">DocType HTML5</a></li>
+        </ul></li>
+          </ul>
+    </div>
+  </div>
+  
+</div>
+
+
+<div id="page">
+
+
+
+<!-- <nav class="visible-phone mob-nav"><i class="icon-reorder icon-2x nav"></i></nav> -->
+
+<div id="nav-inner">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="site-nav" role="navigation">
+
+   <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <ul class="navbar-brand nav">
+      <li class="dropdown">
+        <a id="hg-btn" href="index.html#" class="dropdown-toggle navbar-brand" data-toggle="dropdown"><img src="https://hasgeek.com/static/img/hg-banner.png" width="25px" alt="HasGeek"> <b class="caret"></b></a>
+        <ul class="dropdown-menu block-dropdown">
+          <li><a href="https://hasgeek.tv/"><img src="https://imgee.s3.amazonaws.com/imgee/bd422b7a15cb42a7991b93a8d1b90398.png" width="100px" alt=""><br><small>HGTV</small></a></li>
+          <li><a href="https://funnel.hasgeek.com/"><img src="https://imgee.s3.amazonaws.com/imgee/41749464dc4f41bdaef7d7f426e6226e.png" width="100px" alt=""><br><small>Funnel</small></a></li>
+          <li><a href="https://hacknight.in/"><img src="https://imgee.s3.amazonaws.com/imgee/c35a01600d9b4750afb900d1ba8f7989.png" width="100px" alt=""><br><small>Hacknight</small></a></li>
+          <li><a href="https://hasgeek.com/"><img src="https://imgee.s3.amazonaws.com/imgee/df316e82debf4234ae24a6d1e22bec2e.png" width="100px" alt=""><br><small>HasGeek</small></a></li>
+
+          <li><a href="https://fifthelephant.in/"><img src="https://imgee.s3.amazonaws.com/imgee/2f384e0392094f87ae6991b51500e065.png" width="100px" alt=""><br><small>5el</small></a></li>
+          <li><a href="https://jsfoo.in/"><img src="https://imgee.s3.amazonaws.com/imgee/bac7f32ba12040d1a75834d79c6117c2.png" width="100px" alt=""><br><small>JSFoo</small></a></li>
+          <li><a href="https://droidcon.in/"><img src="https://imgee.s3.amazonaws.com/imgee/f3de23cbf830488da48387c822e912ae.png" width="100px" alt=""><br><small>Droidcon</small></a></li>
+          <li><a href="https://metarefresh.in/"><img src="https://imgee.s3.amazonaws.com/imgee/399be422a4b048c484d992e003330123.png" width="100px" alt=""><br><small>Meta Refresh</small></a></li>
+        </ul>
+      </li>
+    </ul>
+    <a class="navbar-brand" href="index.html"><div class="logo"><img src="https://imgee.s3.amazonaws.com/imgee/6f57f459f97e47369b19e2b2815cf188.png" width="40px" alt="###">rootconf</div></a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right tiny">
+      <li><a href="conference.html">Conference</a></li>
+      <li><a href="workshops.html">Workshops</a></li>
+      <li class="dropdown">
+        <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Run-up Events <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="runup-bangalore.html">Bangalore</a></li>
+          <li><a href="runup-pune.html">Pune</a></li>
+          <li><a href="runup-delhi.html">Delhi</a></li>
+          <li><a href="runup-chennai.html">Chennai</a></li>
+        </ul>
+      </li>
+      <li><a href="sponsors.html">Sponsors</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tshirt.html">T-shirt</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a class="green" href="index.html#tickets">Tickets</a></li>
+      <!-- <li><a href="/2014/#highlights">Previous Editions</a></li> -->
+      <!-- <li><a href="/2014/venue">Venue</a></li>
+      <li><a href="/2014/#about">About</a></li> -->
+      <!-- <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="/2014/editorial-panel">Editorial Panel</a></li>
+          <li><a href="/2014/about">About HasGeek</a></li>
+          <li><a href="/2014/#highlights">Previous Editions</a></li>
+          <li><a href="/2014/code-of-conduct">Code of conduct</a></li>
+        </ul>
+      </li>
+      <li><a href="/2014/tshirt">T-shirt</a></li> -->
+    </ul>
+  </div><!-- /.navbar-collapse -->   
+
+</nav>
+</div>
+
+
+
+<header class="masthead-home push-two-bottom fill-dark">
+  <div id="lamp">
+    <div id="wire"></div>
+      <div id="holder"></div>
+      <div id="bulb"></div>
+      <div id="light"></div>
+  </div>
+  
+  <div class="display-board">
+    <div class="white extralarge push-line-top text-center">
+      <div class="link line2 text-center title-type push-3q-top">
+        <div class="logo"><img src="https://imgee.s3.amazonaws.com/imgee/769dc463009d4cf09be7352c8c7b3628.png" width="80px" alt="###">rootconf</div><div id="blink-wrapper"><span id="blink"></span></div>
+      </div>
+      <p class="tiny prose-type space-half-top">Conference &amp; Workshops on DevOps and Cloud Infrastructure</p>
+    </div>
+
+    <div class="intro row-fluid prose prose-type thin space-one-top text-center">
+      <div class="gray thin link-silent"><a><span class="green">Workshops:</span>&nbsp;&nbsp;<i class="fa fa-calendar violet"></i>&nbsp;14-15 May 2014&nbsp;&nbsp;<i class="fa fa-map-marker violet"></i>&nbsp;TERI, Domlur, Bangalore&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="invisible">.</span></a></div>
+      <div class="gray thin ink-silent"><a><span class="green">Conference:</span>&nbsp;&nbsp;<i class="fa fa-calendar violet"></i>&nbsp;16-17 May 2014&nbsp;&nbsp;<i class="fa fa-map-marker violet"></i>&nbsp;MLR Convention Centre, JP Nagar</a></div>
+    </div>
+    
+  </div> 
+  <div id="mast-img"></div> 
+  <div id="mast-floor">
+    <div class="masthead-test">
+      <img src="https://imgee.s3.amazonaws.com/imgee/ae4c466819ce4701bbdb851b8988ed1e_w992_h225.jpeg" alt="">
+    </div>
+  </div> 
+  
+  
+</header>
+
+
+
+  
+    
+        
+      <section class="event-themes push-two-top push-one-bottom clearfix fill-white">
+  <div class="row-fluid container">
+    <div class="space-three-top regular col-lg-offset-2 col-lg-8 text-justify">
+    	<p>Rootconf is an event on DevOps and Cloud infrastructure with workshops on 14 - 15 May and conference on 16 - 17 May 2014 at Bangalore. Rootconf will help you to plan and develop a strategy map for infrastructure and devops. It will show you the building blocks for reaching a strategy for Infrastructure Scaling, Continuous Integration, Deployment and Delivery.</p>
+      <p>Rootconf is targeted at individuals, teams and companies that are seeking to scale the effectiveness of their developer teams and performance of their web stacks, thereby increase the Cadence of their software delivery. Organizations which need a CI and CD strategy to achieve the above will find a substantial headstart in doing so, by attending Rootconf.</p>
+    </div>
+  </div>
+</section>
+    
+  
+    
+        
+      <section class="push-two clearfix fill-white">
+  <div class="row-fluid text-center space-three-bottom">
+    <h2><a href="runup-events.html" class="link-silent">Rootconf Event Series</a></h2>
+    <p>Run-up events, Workshops &amp; Conference</p>
+    
+    <ul id='htimeline'>
+      <li class='work'>
+        <input class='radio theme-red' id='work4' name='works' type='radio'>
+        <div class="relative">
+          <span class='date'>15 March 2014</span>
+          <span class='circle'></span>
+        </div>
+        <a class="link-silent" href="runup-bangalore.html">
+          <div class='content'>
+            <p>
+              Run-up: Bangalore 
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class='work'>
+        <input class='radio theme-red' id='work3' name='works' type='radio'>
+        <div class="relative">
+          <span class='date'>22 March 2014</span>
+          <span class='circle'></span>
+        </div>
+        <a class="link-silent" href="runup-pune.html">
+          <div class='content'>
+            <p>
+              Run-up: Pune
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class='work'>
+        <input class='radio theme-red' id='work2' name='works' type='radio'>
+        <div class="relative">
+          <span class='date'>5 April 2014</span>
+          <span class='circle'></span>
+        </div>
+        <a class="link-silent" href="runup-delhi.html">
+          <div class='content'>
+            <p>
+              Run-up: Delhi 
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class='work'>
+        <input class='radio theme-red' id='work2' name='works' type='radio'>
+        <div class="relative">
+          <span class='date'>3 May 2014</span>
+          <span class='circle'></span>
+        </div>
+        <a class="link-silent" href="runup-chennai.html">
+          <div class='content'>
+            <p>
+              Run-up: Chennai
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class='work'>
+        <input class='radio theme-green' id='work2' name='works' type='radio'>
+        <div class="relative">
+          <span class='date'>14-15 May 2014</span>
+          <span class='circle'></span>
+        </div>
+        <a class="link-silent">
+          <div class='content'>
+            <p>
+              Workshops
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class='work'>
+        <input class='radio theme-green' id='work1' name='works' type='radio'>
+        <div class="relative">
+          <span class='date'>16-17 May 2014</span>
+          <span class='circle'></span>
+        </div>
+        <a class="link-silent">
+          <div class='content'>
+            <p>
+              Conference
+            </p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+    
+  
+    
+        
+      
+  
+  <section id="tickets" class="push-two clearfix fill-gray">
+  <div class="row-fluid container">
+    <div class="row-fluid container">
+      <div class="col-lg-12">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <td class="regular-prose green">Tickets:</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                  <td class="bold regular-prose">Super Early Geek</td>
+                  <td class="hidden-xs">Two days of conference, breakfast &amp; lunch</td>
+                  <td class="bold regular-prose">&#8377;2400</td>
+                  <td><span class="button button-inactive"><span class="hidden-xs">Sales&nbsp;closed</span><span class="visible-xs"><i class="fa fa-ticket"></i></span></span></td>
+                </tr><tr class="">
+                  <td class="bold regular-prose">Early Geek</td>
+                  <td class="hidden-xs">Two days of conference, breakfast &amp; lunch</td>
+                  <td class="bold regular-prose">&#8377;2700</td>
+                  <td><span class="button button-inactive"><span class="hidden-xs">Sales&nbsp;closed</span><span class="visible-xs"><i class="fa fa-ticket"></i></span></span></td>
+                </tr><tr class="fill-white">
+                  <td class="bold regular-prose">Conference</td>
+                  <td class="hidden-xs">Two days of conference, breakfast &amp; lunch</td>
+                  <td class="bold regular-prose">&#8377;3000</td>
+                  <td><a href="http://rootconf.doattend.com/" class="button"><span class="hidden-xs">Buy&nbsp;ticket</span><span class="visible-xs"><i class="fa fa-ticket"></i></span></a></td>
+                </tr><tr class="fill-white">
+                  <td class="bold regular-prose">Workshops</td>
+                  <td class="hidden-xs">Two days of workshops with lunch</td>
+                  <td class="bold regular-prose">&#8377;4000</td>
+                  <td><a href="http://rootconf.doattend.com/" class="button"><span class="hidden-xs">Buy&nbsp;ticket</span><span class="visible-xs"><i class="fa fa-ticket"></i></span></a></td>
+                </tr><tr class="fill-white">
+                  <td class="bold regular-prose">Corporate</td>
+                  <td class="hidden-xs">Two days of conference, breakfast &amp; lunch, ticket sponsorship credit, <br>custom invoice &amp; event t-shirt</td>
+                  <td class="bold regular-prose">&#8377;7000</td>
+                  <td><a href="http://rootconf.doattend.com/" class="button"><span class="hidden-xs">Buy&nbsp;ticket</span><span class="visible-xs"><i class="fa fa-ticket"></i></span></a></td>
+                </tr><tr class="fill-white">
+                  <td class="bold regular-prose">Single Day Conference ticket</td>
+                  <td class="hidden-xs">Single day entry for conference (separate for 16th & 17th), breakfast &amp; lunch</td>
+                  <td class="bold regular-prose">&#8377;1500</td>
+                  <td><a href="http://rootconf.doattend.com/" class="button"><span class="hidden-xs">Buy&nbsp;ticket</span><span class="visible-xs"><i class="fa fa-ticket"></i></span></a></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+    
+  
+    
+        
+      
+  
+  <section class="featured-speakers push-two clearfix fill-white">
+  <div class="container">
+  <div class="row-fluid">
+    <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 large all-caps text-center space-two-bottom">Featured speakers</h2>
+  </div>
+  
+      
+      <div class="row-fluid space-three-top">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 legible-prose">
+          <ul class="space-half-top list-space-line list-plain list-silent row">
+      
+            <li class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+              <a href="conference.html#1108-quick-prototyping-with-lxc-and-puppet"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/b16132577fbe4f94b6126a1654f732ba.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #3FBA70 */ linear-gradient(rgba(63, 186, 112, 0.2),rgba(63, 186, 112, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/b16132577fbe4f94b6126a1654f732ba.jpeg);"></div>
+              </span></a>
+              <h3>Benjamin Kero</h3>
+              <h5 class="gray">Sr. Systems Administrator at Mozilla's Release Engineering team</h5>
+              <h5 class="all-caps gray">Portland, OR</h5>
+              
+            </li>
+      
+    
+      
+            <li class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+              <a href="conference.html#1131-microsoft-azure-infrastructure-services-foundation"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/3fd6a81dd67a44c191b89dad22064191.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #3FBA70 */ linear-gradient(rgba(63, 186, 112, 0.2),rgba(63, 186, 112, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/3fd6a81dd67a44c191b89dad22064191.jpeg);"></div>
+              </span></a>
+              <h3>M.S.Anand</h3>
+              <h5 class="gray">Technical Architect at Microsoft Technology Center</h5>
+              <h5 class="all-caps gray">Bangalore, India</h5>
+              
+            </li>
+      
+    
+      
+            <li class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+              <a href="conference.html#1115-when-the-internet-bleeded"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/d75d7263111d4ec980268606c03cae27.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #3FBA70 */ linear-gradient(rgba(63, 186, 112, 0.2),rgba(63, 186, 112, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/d75d7263111d4ec980268606c03cae27.jpeg);"></div>
+              </span></a>
+              <h3>Anant Shrivastava</h3>
+              <h5 class="gray">Server Administrator / Information Security Consultant</h5>
+              <h5 class="all-caps gray">Bangalore, India</h5>
+              
+            </li>
+      
+    
+      
+            <li class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+              <a href="conference.html#1123-scaling-databases-with-a-database-abstraction-laye"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/86951c3b2a8840b992ccd974c008a0d5.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #3FBA70 */ linear-gradient(rgba(63, 186, 112, 0.2),rgba(63, 186, 112, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/86951c3b2a8840b992ccd974c008a0d5.jpeg);"></div>
+              </span></a>
+              <h3>Gaurav Gupta</h3>
+              <h5 class="gray">VP of Engineering <br>at ScaleArc</h5>
+              <h5 class="all-caps gray">Mumbai, India</h5>
+              
+            </li>
+      
+    
+      
+            <li class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+              <a href="conference.html#1063-citoengine-alert-management-and-automation-tool"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/d49b9efd19184c9e878e26d3fd49ad42.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #3FBA70 */ linear-gradient(rgba(63, 186, 112, 0.2),rgba(63, 186, 112, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/d49b9efd19184c9e878e26d3fd49ad42.jpeg);"></div>
+              </span></a>
+              <h3>Cyrus Dasadia</h3>
+              <h5 class="gray">Sr. Tech Lead - Production Engineering (DevOps), Inmobi</h5>
+              <h5 class="all-caps gray">Bangalore, India</h5>
+              
+            </li>
+      
+    
+      
+            <li class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+              <a href="conference.html#1067-building-elastic-infrastructures"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/dd31670098fc48b8b7ce554777e8678c.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #3FBA70 */ linear-gradient(rgba(63, 186, 112, 0.2),rgba(63, 186, 112, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/dd31670098fc48b8b7ce554777e8678c.jpeg);"></div>
+              </span></a>
+              <h3>Pankaj Kaushal</h3>
+              <h5 class="gray">Master of disaster at Flipkart.com</h5>
+              <h5 class="all-caps gray">Bangalore, India</h5>
+              
+            </li>
+      
+    
+      
+            <li class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+              <a href="conference.html#1109-avoiding-single-point-of-failure-in-a-multi-servic"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/ac550a773e1d434d896fa1cf275c123d.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #3FBA70 */ linear-gradient(rgba(63, 186, 112, 0.2),rgba(63, 186, 112, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/ac550a773e1d434d896fa1cf275c123d.jpeg);"></div>
+              </span></a>
+              <h3>Gurteshwar Singh</h3>
+              <h5 class="gray">Product Engineer at Plivo Inc</h5>
+              <h5 class="all-caps gray">Bangalore, India</h5>
+              
+            </li>
+      
+    
+      
+            <li class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+              <a href="conference.html#1112-mesos-cluster-management-framework-and-its-role-at"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/3d02ae11328d4fe2b302ef52c2d6e911.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #3FBA70 */ linear-gradient(rgba(63, 186, 112, 0.2),rgba(63, 186, 112, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/3d02ae11328d4fe2b302ef52c2d6e911.jpeg);"></div>
+              </span></a>
+              <h3>Yagnik Khanna</h3>
+              <h5 class="gray">Software developer at Shopify</h5>
+              <h5 class="all-caps gray">Toronto, Canada</h5>
+              
+            </li>
+      
+    
+</div>
+</section>
+
+    
+  
+    
+        
+      
+  
+  <section class="featured-speakers push-two clearfix fill-green">
+  <div class="container">
+  <div class="row-fluid">
+    <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 large all-caps text-center space-two-bottom">Workshop Instructors</h2>
+  </div>
+  
+      
+      <div class="row-fluid space-three-top">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 legible-prose">
+          <ul class="space-half-top list-space-line list-plain link-silent row">
+      
+            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+              <a href="workshops.html#1130-continuous-deployment-with-fabric"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/426a551a122e4499bf96637d62868337.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #c7c575 */ linear-gradient(rgba(12, 165, 176, 0.2),rgba(12, 165, 176, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/426a551a122e4499bf96637d62868337.jpeg);"></div>
+              </span></a>
+              <h3>Akshar Raaj</h3>
+              <h5 class="dark">Web developer at Agiliq</h5>
+              <h5 class="all-caps dark">Bangalore, India</h5>
+              
+            </li>
+            
+      
+    
+      
+            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+              <a href="workshops.html#1079-selinux-for-the-uninitiated"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/a53589019c67467288a1b9053d731914.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #c7c575 */ linear-gradient(rgba(12, 165, 176, 0.2),rgba(12, 165, 176, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/a53589019c67467288a1b9053d731914.jpeg);"></div>
+              </span></a>
+              <h3>Rejy M Cyriac</h3>
+              <h5 class="dark">Quality Engineer, Red Hat</h5>
+              <h5 class="all-caps dark">Bangalore, India</h5>
+              
+            </li>
+            
+      
+    
+      
+            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+              <a href="workshops.html#1120-introduction-to-go-continuous-delivery-software"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/88dc140e27234d6490cd96dcd60d41eb.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #c7c575 */ linear-gradient(rgba(12, 165, 176, 0.2),rgba(12, 165, 176, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/88dc140e27234d6490cd96dcd60d41eb.jpeg);"></div>
+              </span></a>
+              <h3>Praveen S</h3>
+              <h5 class="dark">Go Developer, ThoughtWorks</h5>
+              <h5 class="all-caps dark">Bangalore, India</h5>
+              
+            </li>
+            
+            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+              <a href="workshops.html#1120-introduction-to-go-continuous-delivery-software"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/88dc140e27234d6490cd96dcd60d41eb.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #c7c575 */ linear-gradient(rgba(12, 165, 176, 0.2),rgba(12, 165, 176, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/30969b49623a42f183457d0e6e14fd9a.jpeg);"></div>
+              </span></a>
+              <h3>Md Ali Ejaz</h3>
+              <h5 class="dark">Go Developer, ThoughtWorks</h5>
+              <h5 class="all-caps dark">Bangalore, India</h5>
+              
+            </li>
+            
+      
+    
+      
+            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+              <a href="workshops.html#1071-continuous-delivery-using-jenkins"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/4014bdd8f2314a0f920e0a667f09ac91.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #c7c575 */ linear-gradient(rgba(12, 165, 176, 0.2),rgba(12, 165, 176, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/4014bdd8f2314a0f920e0a667f09ac91.jpeg);"></div>
+              </span></a>
+              <h3>Leena S N</h3>
+              <h5 class="dark">Head of Engineering at Multunus Software</h5>
+              <h5 class="all-caps dark">Bangalore, India</h5>
+              
+            </li>
+            
+            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+              <a href="workshops.html#1071-continuous-delivery-using-jenkins"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/4014bdd8f2314a0f920e0a667f09ac91.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #c7c575 */ linear-gradient(rgba(12, 165, 176, 0.2),rgba(12, 165, 176, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/d97093e5070c49d0b27625b7131a6d9a.jpeg);"></div>
+              </span></a>
+              <h3>Akshay S Murthy</h3>
+              <h5 class="dark">Product Developer at Multunus Software</h5>
+              <h5 class="all-caps dark">Bangalore, India</h5>
+              
+            </li>
+            
+      
+    
+      
+            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+              <a href="workshops.html#1121-ansible-with-puppet-at-scale"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/812573d7fd44401da9eccb1871cdf8dc.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #c7c575 */ linear-gradient(rgba(12, 165, 176, 0.2),rgba(12, 165, 176, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/812573d7fd44401da9eccb1871cdf8dc.jpeg);"></div>
+              </span></a>
+              <h3>Madhurranjan Mohaan</h3>
+              <h5 class="dark">DevOps Engineer, Apigee</h5>
+              <h5 class="all-caps dark">Bangalore, India</h5>
+              
+            </li>
+            
+      
+    
+      
+            <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+              <a href="workshops.html#1036-linux-containers-lxc-and-future-of-software-delive"><span class="img-wrapper">
+                <!-- <img class="photo" src="https://imgee.s3.amazonaws.com/imgee/19638cb43e4148489bb63fcaa3065836.jpeg"> -->
+                <div class="featured-bg-photo circle" style="background: /* top, transparent #c7c575 */ linear-gradient(rgba(12, 165, 176, 0.2),rgba(12, 165, 176, 0.2)),/* bottom, image */url(https://imgee.s3.amazonaws.com/imgee/19638cb43e4148489bb63fcaa3065836.jpeg);"></div>
+              </span></a>
+              <h3>Neependra Khare</h3>
+              <h5 class="dark">Performance Engineer, Red Hat</h5>
+              <h5 class="all-caps dark">Bangalore, India</h5>
+              
+            </li>
+            
+      
+          </ul>
+        </div>    
+      </div>
+      
+    
+</div>
+</section>
+
+    
+  
+    
+        
+      
+  
+  
+  <section id="schedule" class="schedule push-three-top push-four-bottom clearfix fill-dark">
+  <div class="container">
+    <div class="row text-center">
+      
+        
+      
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 extralarge semibold all-caps space-half-bottom">workshops Schedule</div>
+      <div class="all-caps legible dark-gray space-two-bottom">14 - 15 May <button class="tiny-prose button white button-mini" data-toggle="modal" data-target="#myModal"><i class="icon-calendar"></i>&nbsp;&nbsp;Subscribe</button></div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body dark">
+            <h3><i class="icon-calendar"></i>&nbsp;&nbsp;Rootconf 2014: Workshops &amp; Conference</h3>
+            <div class="tiny"><a href="webcal://funnel.hasgeek.com/rootconf2014/schedule/ical" class="button button-mini button-on-blue all-capitalize">Subscribe</a> <a href="https://www.google.com/calendar/render?cid=webcal%3A//funnel.hasgeek.com/rootconf2014/schedule/ical" target="_blank" class="button button-mini button-blue all-capitalize">Subscribe using Google Calender</a></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="table-responsive">
+          <table class="table table-bordered schedule-table fill-white">
+            <thead class="all-caps">
+              <tr>
+                <th width="40%" class="text-right">Day 1</th>
+                <th class="text-center">Time</th>
+                <th width="40%">Day 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                  
+                    <td class="text-right"><div class="tiny italic">Registrations</div></td>
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">09:30 am</div></td>
+                  
+                    <td><div class="tiny italic">Registrations</div></td>
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="workshops.html#1120-introduction-to-go-continuous-delivery-software"><div class="secondary-prose green">Introduction to Go Continuous Delivery Software</div>
+                      <h5 class="all-caps">Praveen S, Md Ali Ejaz</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">10:00 am</div></td>
+                  
+                    
+                      <td><a href="workshops.html#1036-linux-containers-lxc-and-future-of-software-delive"><div class="secondary-prose green">Linux containers (LXC) and future of software delivery</div>
+                      <h5 class="all-caps">Neependra Khare</h5></a></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    <td class="text-right"><div class="tiny italic">Lunch</div></td>
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">01:00 pm</div></td>
+                  
+                    <td><div class="tiny italic">Lunch</div></td>
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="workshops.html#1079-selinux-for-the-uninitiated"><div class="secondary-prose green">SELinux for the Uninitiated</div>
+                      <h5 class="all-caps">Rejy M Cyriac</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">02:00 pm</div></td>
+                  
+                    
+                      <td><a href="workshops.html#1121-ansible-with-puppet-at-scale"><div class="secondary-prose green">Ansible with Puppet at Scale</div>
+                      <h5 class="all-caps">Madhurranjan Mohaan</h5></a></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    <td class="text-right"><div class="tiny italic">Tea break</div></td>
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">04:00 pm</div></td>
+                  
+                    <td><div class="tiny italic">Tea break</div></td>
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="workshops.html#1130-continuous-deployment-with-fabric"><div class="secondary-prose green">Continuous deployment with Fabric</div>
+                      <h5 class="all-caps">Akshar Raaj</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">04:30 pm</div></td>
+                  
+                    
+                      <td><a href="workshops.html#1071-continuous-delivery-using-jenkins"><div class="secondary-prose green">Continuous Delivery using Jenkins</div>
+                      <h5 class="all-caps">Leena S N, Akshay S Murthy</h5></a></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    <td class="text-right"><div class="tiny italic">Closing</div></td>
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">06:30 pm</div></td>
+                  
+                    <td><div class="tiny italic">Closing</div></td>
+                  
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+    
+  
+    
+        
+      
+  
+  
+  <section id="schedule" class="schedule push-three-top push-four-bottom clearfix fill-gray">
+  <div class="container">
+    <div class="row text-center">
+      
+        
+      
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 extralarge semibold all-caps space-half-bottom">conference Schedule</div>
+      <div class="all-caps legible dark-gray space-two-bottom">16 - 17 May <button class="tiny-prose button white button-mini" data-toggle="modal" data-target="#myModal"><i class="icon-calendar"></i>&nbsp;&nbsp;Subscribe</button></div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body dark">
+            <h3><i class="icon-calendar"></i>&nbsp;&nbsp;Rootconf 2014: Workshops &amp; Conference</h3>
+            <div class="tiny"><a href="webcal://funnel.hasgeek.com/rootconf2014/schedule/ical" class="button button-mini button-on-blue all-capitalize">Subscribe</a> <a href="https://www.google.com/calendar/render?cid=webcal%3A//funnel.hasgeek.com/rootconf2014/schedule/ical" target="_blank" class="button button-mini button-blue all-capitalize">Subscribe using Google Calender</a></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="table-responsive">
+          <table class="table table-bordered schedule-table fill-white">
+            <thead class="all-caps">
+              <tr>
+                <th width="40%" class="text-right">Day 1</th>
+                <th class="text-center">Time</th>
+                <th width="40%">Day 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                  
+                    <td class="text-right"><div class="tiny italic">Check-in &amp; Breakfast</div></td>
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">08:30 am</div></td>
+                  
+                    <td><div class="tiny italic">Check-in &amp; Breakfast</div></td>
+                  
+              </tr>
+              
+              <tr>
+                  
+                    <td class="text-right"><div class="tiny italic">introductions</div></td>
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">09:15 am</div></td>
+                  
+                    <td><div class="tiny italic">introductions</div></td>
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="conference.html#1067-building-elastic-infrastructures"><div class="secondary-prose green">Building Elastic Infrastructures</div>
+                      <h5 class="all-caps">Pankaj Kaushal</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">09:30 am</div></td>
+                  
+                    
+                      <td><a href="conference.html#1115-when-the-internet-bleeded"><div class="secondary-prose green">When the Internet Bleeded</div>
+                      <h5 class="all-caps">Anant Shrivastava</h5></a></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="conference.html#1108-quick-prototyping-with-lxc-and-puppet"><div class="secondary-prose green">Quick Prototyping with LXC and Puppet</div>
+                      <h5 class="all-caps">Benjamin Kero</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">10:15 am</div></td>
+                  
+                    
+                      <td><a href="conference.html#1137-ddos-mitigation-flipkart"><div class="secondary-prose green">DDOS mitigation @flipkart</div>
+                      <h5 class="all-caps">Sameer Garg</h5></a></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    <td class="text-right"><div class="tiny italic">Tea break</div></td>
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">11:00 am</div></td>
+                  
+                    <td><div class="tiny italic">Tea break</div></td>
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="conference.html#1109-avoiding-single-point-of-failure-in-a-multi-servic"><div class="secondary-prose green">Avoiding single point of failure in a multi-services architecture</div>
+                      <h5 class="all-caps">Gurteshwar Singh</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">11:30 am</div></td>
+                  
+                    
+                      <td><a href="conference.html#1112-mesos-cluster-management-framework-and-its-role-at"><div class="secondary-prose green">Mesos: Cluster management framework and it's role at Shopify</div>
+                      <h5 class="all-caps">Yagnik Khanna</h5></a></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="conference.html#1048-production-is-priority-self-fix-heal-techniques"><div class="secondary-prose green">Production is Priority - Self Fix / Heal Techniques</div>
+                      <h5 class="all-caps">Jabir Ahmed</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">12:15 pm</div></td>
+                  
+                    
+                      <td><a href="conference.html#1041-building-orchestration-and-configuration-with-ansi"><div class="secondary-prose green">Building Orchestration and Configuration with Ansible</div>
+                      <h5 class="all-caps">Aditya Patawari</h5></a></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><div class="secondary-prose green"><span class="dark italic tiny thin">Lunch</span></div>
+                      <h5 class="all-caps">Powered by&nbsp;&nbsp;<a href="sponsors.html#gold-flipkart"><img src="https://imgee.s3.amazonaws.com/imgee/aa05875025af4cb391485e9d372b8860_w100_h31.png" alt="Flipkart" height="25" style="margin-top: -3px"></a></h5></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">01:00 pm</div></td>
+                  
+                    
+                      <td><div class="secondary-prose green"><span class="dark italic tiny thin">Lunch</span></div>
+                      <h5 class="all-caps"></h5></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="conference.html#1042-how-fast-can-you-onboard-a-new-team-member"><div class="secondary-prose green">How fast can you onboard a new team member</div>
+                      <h5 class="all-caps">Vivek Parihar</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">02:00 pm</div></td>
+                  
+                    
+                      <td><a href="conference.html#1063-citoengine-alert-management-and-automation-tool"><div class="secondary-prose green">CitoEngine: Alert management and automation tool.</div>
+                      <h5 class="all-caps">Cyrus Dasadia</h5></a></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="conference.html#1104-scale-anything-with-haproxy"><div class="secondary-prose green">Scale anything with haproxy</div>
+                      <h5 class="all-caps">Mohamed Imran K R</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">02:20 pm</div></td>
+                  
+                    
+                      <td><a href="conference.html#1034-automation-using-robotframework-for-embedded-devic"><div class="secondary-prose green">Automation using RobotFramework for embedded device</div>
+                      <h5 class="all-caps">Sriramkumar VH</h5></a></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="conference.html#1103-tsuru-serve-it-yourself"><div class="secondary-prose green">Tsuru - Serve it yourself.</div>
+                      <h5 class="all-caps">Rohit Nair</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">02:40 pm</div></td>
+                  
+                    
+                      <td><a href="conference.html#1006-scaling-to-2000-request-per-second-with-mongodb"><div class="secondary-prose green">Scaling to 2000 request per second with MongoDB</div>
+                      <h5 class="all-caps">Suchit Puri</h5></a></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="conference.html#1113-diggin-diamonds-from-a-coal-minex"><div class="secondary-prose green">Diggin' Diamonds from a Coal Mine</div>
+                      <h5 class="all-caps">Sudeep Agarwal</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">03:00 pm</div></td>
+                  
+                    
+                      <td><div class="secondary-prose green">Flash talks</div>
+                      <h5 class="all-caps">You!</h5></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    <td class="text-right"><div class="tiny italic">Tea break</div></td>
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">03:45 pm</div></td>
+                  
+                    <td><div class="tiny italic">Tea break</div></td>
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><div class="secondary-prose green">Flash talks</div>
+                      <h5 class="all-caps">You!</h5></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">04:15 pm</div></td>
+                  
+                    
+                      <td><a href="conference.html#1114-how-we-reduced-the-launch-of-a-60-node-production-"><div class="secondary-prose green">How we reduced the launch of a 60 node production cluster on the cloud from 3 days to 2 hours</div>
+                      <h5 class="all-caps">Sriharsha Chillara</h5></a></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><div class="secondary-prose green">Flash talks</div>
+                      <h5 class="all-caps">You!</h5></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">04:35 pm</div></td>
+                  
+                    
+                      <td><a href="conference.html#1062-postgresql-as-nosql"><div class="secondary-prose green">PostgreSQL as NoSQL</div>
+                      <h5 class="all-caps">Himanchali</h5></a></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="conference.html#1045-testing-infrastructure-code-using-test-kitchen-doc"><div class="secondary-prose green">Testing Infrastructure Code using Test-kitchen, Docker and Chef-Zero</div>
+                      <h5 class="all-caps">Kamalika Majumder</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">05:00 pm</div></td>
+                  
+                    
+                      <td><a href="conference.html#1123-scaling-databases-with-a-database-abstraction-laye"><div class="secondary-prose green">Scaling databases with a database abstraction layer</div>
+                      <h5 class="all-caps">Gaurav Gupta</h5></a></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="conference.html#1039-continuous-multi-stack-deployments-on-cloud-using-"><div class="secondary-prose green">Continuous Multi-stack Deployments on Cloud using Docker</div>
+                      <h5 class="all-caps">Vinothini Raju</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">05:45 pm</div></td>
+                  
+                    
+                      <td><div class="secondary-prose green">Closing</div>
+                      <h5 class="all-caps">Feedback &amp; comments</h5></td>
+                    
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><a href="conference.html#1131-microsoft-azure-infrastructure-services-foundation"><div class="secondary-prose green">Microsoft Azure Infrastructure Services foundation (sponsored)</div>
+                      <h5 class="all-caps">M.S.Anand</h5></a></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">06:15 pm</div></td>
+                  
+                    <td><div class="tiny italic"></div></td>
+                  
+              </tr>
+              
+              <tr>
+                  
+                    
+                      <td class="text-right"><div class="secondary-prose green">Networking dinner</div>
+                      <h5 class="all-caps">Sponsored by&nbsp;&nbsp;<a href="sponsors.html#dinner-sequoia-capital"><img src="https://imgee.s3.amazonaws.com/imgee/2a955d660a0749edbb7949245540bfb6.png" alt="Sequoia Capital" height="15" style="margin-top: -3px"></a></h5></td>
+                    
+                  
+                <td class="schedule-slot text-center bold"><div class="secondary-prose all-caps">07:00 pm</div></td>
+                  
+                    <td><div class="tiny italic"></div></td>
+                  
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+    
+  
+    
+        
+      <section id="highlights" class="push-two nopush-bottom clearfix fill-dark">
+  <div class="row-fluid container"> 
+  <h2 class="text-center push-1q-bottom green large all-caps"><a class="link-silent" target="_blank" href="https://rootconf.in/2012/">Previous edition</a></h2> 
+  <p class="text-center tiny push-one"><a href="https://rootconf.in/2012/">The first edition of Rootconf</a> was held on May 2012, at Dharamaram Vidya Kshethram, Bangalore. The single day three track conference featured Configuration Deployment/Management, Performance Tuning, Security, Virtualization, Cloud &amp; Monitoring.</p>
+    <div class="clearboth">
+      <ul class="space-two-bottom contain-width list-space-line list-plain link-silent video-thumbnails clearfix">
+        <li class="push-one-bottom">
+          <article class="video-thumbnail prose-type">
+            <p>
+              <a class="img-wrapper" href="https://hasgeek.tv/rootconf/2012/358-securing-a-linux-web-server-in-10-steps-or-less">
+                <img alt="" src="https://imgee.s3.amazonaws.com/imgee/91ea2b8096cb4c4985b8aad823dff81a.jpeg">
+              </a>
+            </p>
+            <h4>
+              <a href="https://hasgeek.tv/rootconf/2012/358-securing-a-linux-web-server-in-10-steps-or-less">
+                Securing a Linux Web Server in 10 Steps or Less
+              </a>
+            </h4>
+            <h5 class="green">
+              Akash Mahajan
+            </h5>
+          </article>
+        </li>
+        <li class="push-one-bottom">
+          <article class="video-thumbnail prose-type">
+            <p>
+              <a class="img-wrapper" href="https://hasgeek.tv/rootconf/2012/364-mohit-chawla-make-your-servers-sing-using-mcollective">
+                <img alt="" src="https://imgee.s3.amazonaws.com/imgee/f5dce88f19a74d01b16b18d5fb9dfcb7.jpeg">
+              </a>
+            </p>
+            <h4>
+              <a href="https://hasgeek.tv/rootconf/2012/364-mohit-chawla-make-your-servers-sing-using-mcollective">
+                Make your servers sing using MCollective
+              </a>
+            </h4>
+            <h5 class="green">
+              Mohit Chawla
+            </h5>
+          </article>
+        </li>
+        <li class="push-one-bottom">
+          <article class="video-thumbnail prose-type">
+            <p>
+              <a class="img-wrapper" href="https://hasgeek.tv/rootconf/2012/359-continuous-integration-made-fun-with-jenkins-hubot-gtalk">
+                <img alt="" src="https://imgee.s3.amazonaws.com/imgee/0408a30c3aa84b6f9cba189925670242.jpeg">
+              </a>
+            </p>
+            <h4>
+              <a href="https://hasgeek.tv/rootconf/2012/359-continuous-integration-made-fun-with-jenkins-hubot-gtalk">
+                Continuous Integration made fun with Jenkins &amp; Hubot (+ Gtalk)
+              </a>
+            </h4>
+            <h5 class="green">
+              Sameer Segal
+            </h5>
+          </article>
+        </li>
+        <li class="push-one-bottom">
+          <article class="video-thumbnail prose-type">
+            <p>
+              <a class="img-wrapper" href="https://hasgeek.tv/rootconf/2012/366-biju-chacko-varanid-distributed-resilient-and-scalable-alerting">
+                <img alt="" src="https://imgee.s3.amazonaws.com/imgee/de8e58d6c628418785a255b8e5e1d053.jpeg">
+              </a>
+            </p>
+            <h4>
+              <a href="https://hasgeek.tv/rootconf/2012/366-biju-chacko-varanid-distributed-resilient-and-scalable-alerting">
+                Varanid: distributed, resilient and scalable alerting
+              </a>
+            </h4>
+            <h5 class="green">
+              Biju Chacko
+            </h5>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="push-one-top push-three-bottom">
+      <div class="container text-center">
+        <a target="_blank" href="https://hasgeek.tv/rootconf/2012" class="button regular-prose">More videos on HasGeek TV</a>
+        <p class="space-one-top regular-prose"><span class="fill-white"><a class="border-one pad-1q" target="_blank" href="http://www.flickr.com/photos/hasgeek/sets/72157631848803975/">Photos:&nbsp;&nbsp;2012</a></span></p>
+      </div>
+    </div> -->
+  </div>
+</section>
+    
+  
+    
+        
+      
+  
+  
+  <section id="venue" class="venue-home clearfix fill-white">
+  <div class="row-fluid">
+    <h2 class="col-lg-5 extralarge all-caps">Venue</h2>
+    <div
+      class="leaflet-map city-level"
+      data-label="MLR Convention Centre, J. P. Nagar"
+      data-zoom="14"
+      data-marker="12.891476, 77.585079">
+    
+      <p class="col-lg-6 legible-prose">
+        MLR Convention Centre, J.P. Nagar<br>Brigade Millenium Complex, J.P. Nagar 7th Phase<br>Bangalore, Karnataka  India. <br>Phone: +91 8861386058, 9886123435, 9880405439, 080-40182222<br>
+      </p>
+    
+    </div>
+  
+    <div
+      class="leaflet-map country-level"
+      data-zoom="3"
+      data-label="Bangalore"
+      data-marker="12.9833, 77.5833">
+    
+      <p class="col-lg-6 legible-prose">
+        Bangalore<br>Karnataka<br>India
+      </p>
+    
+    </div>
+  </div>
+</section>
+
+    
+  
+    
+        
+      <section id="sponsors" class="sponsors push-two clearfix fill-dark">
+  <div class="row-fluid container">
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 push-one-bottom">
+      <h2 class="extralarge all-caps">Sponsors</h2>
+    </div>
+     <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 legible-prose prose-type space-one-top">
+      <p>
+        Showcase platforms, tools and APIs.<br>
+        Engage the best developers and designers.
+      </p>
+      
+      <p class="title-type secondary space-one-top">
+        <a class="button button" target="_blank" href="http://hsgk.in/NucSfd">Get Sponsorship Deck</a>
+      </p>
+    </div>
+  </div>
+  
+    
+    
+      
+      
+    
+      
+      
+        
+        <div id="sponsors-gold" class="row-fluid container space-two-top">
+          <h3 class="col-lg-5 col-md-5 col-sm-5 col-xs-12 legible all-caps space-one-bottom">Gold</h3>
+
+          <ul class="col-lg-7 col-md-7 col-sm-7 col-xs-12 nospace-bottom list-plain link-silent clearfix list-space-line sponsor-l nospace-ul">
+        
+          <li>
+              <a href="sponsors.html#gold-media-net" class="occupy sponsor-logo contain-height">
+                <img alt="Media.net" src="https://imgee.s3.amazonaws.com/imgee/205beaeb541e47cfa06e654fe35a12c4.png">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="sponsors.html#gold-flipkart" class="occupy sponsor-logo contain-height">
+                <img alt="Flipkart" src="https://imgee.s3.amazonaws.com/imgee/aa05875025af4cb391485e9d372b8860_w300_h95.png">
+              </a>
+          </li>
+        
+          </ul>
+        </div>
+        
+      
+    
+      
+      
+    
+      
+      
+        
+        <div id="sponsors-bronze" class="row-fluid container space-two-top">
+          <h3 class="col-lg-5 col-md-5 col-sm-5 col-xs-12 legible all-caps space-one-bottom">Bronze</h3>
+
+          <ul class="col-lg-7 col-md-7 col-sm-7 col-xs-12 nospace-bottom list-plain link-silent clearfix list-space-line sponsor-m nospace-ul">
+        
+          <li>
+              <a href="sponsors.html#bronze-cloud-cover" class="occupy sponsor-logo contain-height">
+                <img alt="CloudCover" src="https://imgee.s3.amazonaws.com/imgee/b75416994d3d4b81938f389d5ffe31f6.png">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="sponsors.html#bronze-my-parichay" class="occupy sponsor-logo contain-height">
+                <img alt="MyParichay" src="https://imgee.s3.amazonaws.com/imgee/85397516bb0246dc92114d58284e5e7d_w300_h100.png">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="sponsors.html#bronze-redhat" class="occupy sponsor-logo contain-height">
+                <img alt="RedHat" src="https://imgee.s3.amazonaws.com/imgee/f40a156a206b40f1964039889713addc_w300_h90.png">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="sponsors.html#bronze-microsoft-azure" class="occupy sponsor-logo contain-height">
+                <img alt="Microsoft Azure" src="https://imgee.s3.amazonaws.com/imgee/26167ca91a144880bce3c65a7c62ae8b_w300_h69.png">
+              </a>
+          </li>
+        
+          </ul>
+        </div>
+        
+      
+    
+      
+      
+        
+        <div id="sponsors-dinner" class="row-fluid container space-two-top">
+          <h3 class="col-lg-5 col-md-5 col-sm-5 col-xs-12 legible all-caps space-one-bottom">Evening dinner Sponsor</h3>
+
+          <ul class="col-lg-7 col-md-7 col-sm-7 col-xs-12 nospace-bottom list-plain link-silent clearfix list-space-line sponsor-m nospace-ul">
+        
+          <li>
+              <a href="sponsors.html#dinner-sequoia-capital" class="occupy sponsor-logo contain-height">
+                <img alt="Sequoia Capital" src="https://imgee.s3.amazonaws.com/imgee/2a955d660a0749edbb7949245540bfb6_w300_h26.png">
+              </a>
+          </li>
+        
+          </ul>
+        </div>
+        
+      
+    
+      
+      
+        
+        <div id="sponsors-speaker-travel" class="row-fluid container space-two-top">
+          <h3 class="col-lg-5 col-md-5 col-sm-5 col-xs-12 legible all-caps space-one-bottom">Speaker Travel Support</h3>
+
+          <ul class="col-lg-7 col-md-7 col-sm-7 col-xs-12 nospace-bottom list-plain link-silent clearfix list-space-line sponsor-m nospace-ul">
+        
+          <li>
+              <a href="sponsors.html#speaker-travel-mozilla" class="occupy sponsor-logo contain-height">
+                <img alt="Mozilla" src="https://imgee.s3.amazonaws.com/imgee/8324ef0bea4740e88012a315b2297d2f.png">
+              </a>
+          </li>
+        
+          </ul>
+        </div>
+        
+      
+    
+      
+      
+        
+        <div id="sponsors-community" class="row-fluid container space-two-top">
+          <h3 class="col-lg-5 col-md-5 col-sm-5 col-xs-12 legible all-caps space-one-bottom">Community Sponsors</h3>
+
+          <ul class="col-lg-7 col-md-7 col-sm-7 col-xs-12 nospace-bottom list-plain link-silent clearfix list-space-line sponsor-m nospace-ul">
+        
+          <li>
+              <a href="sponsors.html#community-e2e-networks" class="occupy sponsor-logo contain-height">
+                <img alt="E2E Networks" src="https://imgee.s3.amazonaws.com/imgee/837973ad292d47eabfd6d36530772800_w300_h78.png">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="sponsors.html#community-browser-stack" class="occupy sponsor-logo contain-height">
+                <img alt="BrowserStack" src="https://imgee.s3.amazonaws.com/imgee/c4762a9d3e444f858c3cf6be6c0e8019_w300_h98.png">
+              </a>
+          </li>
+        
+          </ul>
+        </div>
+        
+      
+    
+      
+      
+        
+        <div id="sponsors-corporate" class="row-fluid container space-two-top">
+          <h3 class="col-lg-5 col-md-5 col-sm-5 col-xs-12 legible all-caps space-one-bottom">Corporate Tickets</h3>
+
+          <ul class="col-lg-7 col-md-7 col-sm-7 col-xs-12 nospace-bottom list-plain link-silent clearfix list-space-line sponsor-compact nospace-ul">
+        
+          <li>
+              <a href="http://www.stormesoft.com/" class="occupy sponsor-logo contain-height">
+                <img alt="Stormesoft Technologies" src="https://imgee.s3.amazonaws.com/imgee/01e6477140e948579174390cc03a669a_w300_h139.png">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="http://www.zeomega.com/" class="occupy sponsor-logo contain-height">
+                <img alt="ZeOmega" src="https://imgee.s3.amazonaws.com/imgee/4e3fc3efba944a63be7bc59e69e238a1_w300_h87.jpeg">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="http://www.calsoftlabs.com/" class="occupy sponsor-logo contain-height">
+                <img alt="CalsoftLabs" src="https://images.hasgeek.com/embed/file/518090ab8652432b98831da891456381">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="http://www.knolskape.com/" class="occupy sponsor-logo contain-height">
+                <img alt="KnolSkape" src="https://imgee.s3.amazonaws.com/imgee/7c0513b345454b98ae3e5b913d507f57_w300_h70.png">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="https://grallo.com/" class="occupy sponsor-logo contain-height">
+                <img alt="Grallo" src="https://imgee.s3.amazonaws.com/imgee/c33a723b626e4777ac1c1fa08e6e7f37_w300_h222.png">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="http://www.cisco.com" class="occupy sponsor-logo contain-height">
+                <img alt="Cisco" src="https://imgee.s3.amazonaws.com/imgee/b9fcb2b06f2943fdb6f3b576f79bbb6e_w200_h105.png">
+              </a>
+          </li>
+        
+      
+        
+          <li>
+              <a href="http://rboomerang.com/" class="occupy sponsor-logo contain-height">
+                <img alt="Boomerang Commerce" src="https://imgee.s3.amazonaws.com/imgee/58e77f5ee18648d4b4647e77a7669d9a_w200_h40.png">
+              </a>
+          </li>
+        
+          </ul>
+        </div>
+        
+      
+    
+      
+      
+    
+      
+      
+    
+  
+</section>
+    
+  
+
+
+<footer class="page-footer push-two fill-black clearfix">
+  <div class="text-center tiny">
+    <p class="gray">Copyright &copy; 2010–14. All rights reserved.</p>
+    <p><a href="mailto:info@hasgeek.com?subject=Hello Rootconf">info@hasgeek.com</a> /
+    <a href="tel:+918067684422" class="link-silent">+91-80-67684422</a></p>
+    <h3>
+      <a class="ir hasgeek-logo center-block space-one-top link-silent" href="https://hasgeek.com/">
+        HasGeek
+      </a>
+    </h3>
+  </div>
+</footer>
+
+
+</div><!-- #page -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../_themes/rootconf2014/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.6.3/leaflet.js"></script>
+  <script src="../_themes/rootconf2014/js/vendor/bootstrap.min.js.packed.js"></script>
+  <script src="../_themes/rootconf2014/js/maps.js.packed.js"></script>
+  
+
+<script>
+// Google Analytics
+if (location.hostname == 'rootconf.in') {
+  var _gaq=[['_setAccount','UA-19123154-21'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+}
+</script>
+
+<script>
+    $(window).scroll(function () {
+      var currentScroll = $(this).scrollTop();
+      var checkPoint;
+      if(Modernizr.mq('only screen and (max-width: 768px)')){
+        checkPoint = 100;
+      } else {
+        checkPoint = 50;
+      }
+      if( currentScroll > checkPoint){
+        $('#nav-inner').addClass('navbar-fixed-top').addClass('visible').removeClass('invisible');
+      }  else {
+        $('#nav-inner').removeClass('navbar-fixed-top').removeClass('visible').addClass('invisible');
+      }
+    });
+</script>
+<!-- <script>
+ window.scrollback = {
+  streams:["hasgeek"],
+  theme: 'light',ticker: true
+ };
+ 
+ /***** don't edit below *****/
+ (function(d,s,h,e){e=d.createElement(s);e.async=1;
+ e.src=h+'/client.min.js';scrollback.host=h;
+ d.getElementsByTagName(s)[0].parentNode.appendChild(e);}
+ (document,'script',(location.protocol=="https:"?"https:":"http:")+'//scrollback.io'));
+</script> -->
+
+
+<!-- Prompt IE 6 users to install Chrome Frame. -->
+<!-- chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+
+</body>
+</html>
